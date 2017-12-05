@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.psiada.app.phunc.Resources">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/resource_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="Resources"
+            android:textSize="25sp"
+            android:clickable="true"/>
+
+
+        <TextView
+            android:id="@+id/mun_101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resource_heading"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="MUN 101"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mun_101"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
+
+        <TextView
+            android:id="@+id/crisis_101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="Crisis Strategy 101"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/crisis_101"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
+
+
+        <TextView
+            android:id="@+id/directive_101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="Directive Writing 101"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/directive_101"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
+
+
+        <TextView
+            android:id="@+id/parli_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider3"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="Parliamentary Procedure"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/parli_pro"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
+
+
+        <TextView
+            android:id="@+id/parli_pro_in_depth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider4"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="Parliamentary Procedure (In-Depth)"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/parli_pro_in_depth"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
+
+
+        <TextView
+            android:id="@+id/event_scheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider5"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="Scheme of Events"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/event_scheme"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
+
+
+        <TextView
+            android:id="@+id/passing_defeating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider6"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Passing and Defeating Motions"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+</FrameLayout>

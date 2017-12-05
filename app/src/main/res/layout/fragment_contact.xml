@@ -1,0 +1,242 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.psiada.app.phunc.Contact">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_contact">
+                <TextView
+                    android:id="@+id/contact_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Contact"
+                    android:textSize="25sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contact_header"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/contact1">
+
+                    <ImageView
+                        android:id="@+id/contact1_headshot"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/contact1_info"
+                        android:layout_toRightOf="@id/contact1_headshot"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/martaInfo"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/contact1_email"
+                        android:layout_toRightOf="@id/contact1_headshot"
+                        android:layout_below="@id/contact1_info"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/martaEmail"
+                        android:autoLink="email"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/contact1_phone"
+                        android:layout_toRightOf="@id/contact1_headshot"
+                        android:layout_below="@id/contact1_email"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/martaPhone"
+                        android:autoLink="phone"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contact1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/contact2">
+
+                    <ImageView
+                        android:id="@+id/contact2_headshot"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/contact2_info"
+                        android:layout_toRightOf="@id/contact2_headshot"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/tomInfo"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/contact2_email"
+                        android:layout_toRightOf="@id/contact2_headshot"
+                        android:layout_below="@id/contact2_info"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/tomEmail"
+                        android:autoLink="email"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/contact2_phone"
+                        android:layout_toRightOf="@id/contact2_headshot"
+                        android:layout_below="@id/contact2_email"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/tomPhone"
+                        android:autoLink="phone"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/contact3">
+
+                <ImageView
+                    android:id="@+id/contact3_headshot"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact3_info"
+                    android:layout_toRightOf="@id/contact3_headshot"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/danInfo"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact3_email"
+                    android:layout_toRightOf="@id/contact3_headshot"
+                    android:layout_below="@id/contact3_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/danEmail"
+                    android:autoLink="email"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact3_phone"
+                    android:layout_toRightOf="@id/contact3_headshot"
+                    android:layout_below="@id/contact3_email"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/danPhone"
+                    android:autoLink="phone"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/contact4">
+
+                <ImageView
+                    android:id="@+id/contact4_headshot"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact4_info"
+                    android:layout_toRightOf="@id/contact4_headshot"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/annaInfo"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact4_email"
+                    android:layout_toRightOf="@id/contact4_headshot"
+                    android:layout_below="@id/contact4_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/annaEmail"
+                    android:autoLink="email"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact4_phone"
+                    android:layout_toRightOf="@id/contact4_headshot"
+                    android:layout_below="@id/contact4_email"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/annaPhone"
+                    android:autoLink="phone"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>

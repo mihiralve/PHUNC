@@ -1,0 +1,321 @@
+<resources>
+    <string name="app_name">PHUNC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="scheduleFull"><b>Friday, Nov. 3</b>
+        \n12:00 pm – 4:00 pm  \t\tRegistration at the Atherton
+        \n3:00 pm  – 4:00 pm	   \t\tOpening Ceremonies
+        \n4:30 pm  – 6:30 pm	   \t\tCommittee Session I
+        \n6:30 pm  – 8:00 pm	   \t\tBreak
+        \n8:00 pm  – 9:00 pm	   \t\tAdvisor Meeting
+        \n8:00 pm  – 10:00 pm  \t\tCommittee Session II
+
+        \n\n<b>Saturday, Nov. 4</b>
+        \n9:30 am  – 12:00 pm  \t\tCommittee Session III
+        \n12:00 pm – 2:00 pm	   \t\tLunch Break
+        \n2:00 pm  – 4:30 pm   \t\tCommittee Session IV
+        \n4:30 pm  – 6:30 pm	   \t\tDinner
+        \n6:30 pm  – 9:00 pm	   \t\tCommittee Session V
+        \n7:00 pm  - 8:00 pm   \t\tAdvisor Meeting
+        \n10:00 pm – 12:00 am  \t\tDelegate Social
+
+        \n\n<b>Sunday, Nov. 5</b>
+        \n9:30 am – 11:30 am	  \t\tCommittee Session VI
+        \n12:30 pm – 1:30 pm	  \t\tClosing Ceremonies
+
+    </string>
+
+    <string name="scheduleRow1">Friday, Nov. 3
+    \n12:00 pm – 4:00 pm
+    \n3:00 pm – 4:00 pm
+    \n4:30 pm – 6:30 pm
+    \n6:30 pm – 8:00 pm
+    \n8:00 pm – 9:00 pm
+    \n8:00 pm – 10:00 pm
+    </string>
+
+    <string name="martaInfo">
+        <b>Marta Millar</b>
+        \n<i>Secretary General</i>
+    </string>
+
+    <string name="martaEmail">
+        sg.phunc@psiada.org
+    </string>
+
+    <string name="martaPhone">
+        814-880-0080
+    </string>
+
+    <string name="tomInfo">
+        <b>Tom Santee</b>
+        \n<i>Chief of Staff</i>
+    </string>
+
+    <string name="tomEmail">
+        cos.phunc@psiada.org
+    </string>
+
+    <string name="tomPhone">
+        610-297-1083
+    </string>
+
+    <string name="danInfo">
+        <b>Daniel Donaher</b>
+        \n<i>USG for Crisis and Committee Development</i>
+    </string>
+
+    <string name="danEmail">
+        crisis.phunc@psiada.org
+    </string>
+
+    <string name="danPhone">
+        610-316-7074
+    </string>
+
+    <string name="annaInfo">
+        <b>Anna Lin</b>
+        \n<i>Chargée d\'Affaires</i>
+    </string>
+
+    <string name="annaEmail">
+        charge.phunc@psiada.org
+    </string>
+
+    <string name="annaPhone">
+        973-868-2671
+    </string>
+
+
+    <string name="menu1">
+        <a href="https://goo.gl/maps/ffQeJwYN2tH2">
+        <b>India Pavilion</b> ($) <i>Indian</i>
+        222 E Calder Way
+        </a>
+
+    </string>
+
+    <string name="menu2">
+        <a href="https://goo.gl/maps/AjWY4baa3Tz">
+        <b>Pita Cabana</b> ($) <i>Middle Eastern</i>
+        334 E Calder Way
+        </a>
+    </string>
+
+    <string name="menu3">
+        <a href="https://goo.gl/maps/yaVAn26TgAQ2">
+        <b>Yallah Taco</b> ($) <i>Mexican</i>
+        217 McAllister Alley
+        </a>
+    </string>
+
+    <string name="menu4">
+        <a href="https://goo.gl/maps/jgdCBbGensD2">
+        <b>Cozy Thai</b> ($$) <i>Thai</i>
+        232 S. Allen Street
+        </a>
+    </string>
+
+    <string name="menu5">
+        <a href="https://goo.gl/maps/VSgmQsSmMiG2">
+        <b>Irving’s Bagels</b> ($) <i>Bagels, Sandwiches</i>
+        110 E College Ave
+        </a>
+    </string>
+
+    <string name="menu6">
+        <a href="https://goo.gl/maps/n4e5QDVfMir">
+        <b>Fiddlehead</b> ($) <i>Salads</i>
+        134 W College Ave
+        </a>
+    </string>
+
+    <string name="menu7">
+        <a href="https://goo.gl/maps/zuCgvtysfuJ2">
+        <b>Bagel Crust</b> ($) <i>Bagels, Sandwiches</i>
+        332 E Calder Way
+        </a>
+    </string>
+
+    <string name="menu8">
+        <a href="https://goo.gl/maps/fsmPxsKVVYu">
+        <b>Little Szechuan</b> ($) <i>Chinese</i>
+        228 W College Ave
+        </a>
+    </string>
+
+    <string name="menu9">
+        <a href="https://goo.gl/maps/dfig5Bd6PVy">
+        <b>The Corner Room</b> ($$) <i>American</i>
+        100 W. College Avenue
+        </a>
+    </string>
+
+    <string name="menu10">
+        <a href="https://goo.gl/maps/Autkdsh663v">
+        <b>Chipotle</b> ($) <i>Mexican</i>
+        116 Heister Street
+        </a>
+    </string>
+
+    <string name="menu11">
+        <a href="https://goo.gl/maps/n7uhDseURqp">
+        <b>Pho 11</b> ($) <i>Vietnamese</i>
+        146 N Atherton St
+        </a>
+    </string>
+
+    <string name="menu12">
+        <a href="https://goo.gl/maps/zHJP8viPUgA2">
+        <b>The Deli</b> ($$) <i>Pizza, Sandwiches</i>
+        113 Heister Street
+        </a>
+    </string>
+
+    <string name="menu13">
+        <a href="https://goo.gl/maps/Nzw9SiPaX8k">
+        <b>Big Bowl Noodle House</b> ($) <i>Chinese</i>
+        418 E College Ave\n
+        *Cash Only
+        </a>
+    </string>
+
+    <string name="menu14">
+        <a href="https://goo.gl/maps/79LaYxjZ2QN2">
+        <b>Baby’s Burgers &amp; Shakes</b> ($) <i>Diner</i>
+        131 S Garner St
+        </a>
+    </string>
+
+    <string name="menu15">
+        <a href="https://goo.gl/maps/qGZTgz2SSh92">
+        <b>Green Bowl</b> ($$) <i>Asian Fusion, Chinese, Salads</i>
+        131 W. Beaver Avenue
+        </a>
+    </string>
+
+    <string name="menu16">
+        <a href="https://goo.gl/maps/jsuYHUjKTm22">
+        <b>Underground Burgers &amp; Crepes</b> ($) <i>Burgers, Crepes</i>
+        218 E Calder Way
+        </a>
+    </string>
+
+    <string name="menu17">
+        <a href="https://goo.gl/maps/Pm9Vadd1NXy">
+        <b>Galanga</b> ($$) <i>Thai</i>
+        454 E. College Avenue
+        </a>
+    </string>
+
+    <string name="menu18">
+        <a href="https://goo.gl/maps/oWTtMCHouHP2">
+        <b>The Tavern</b> ($$) <i>American</i>
+        220 E. College Avenue
+        </a>
+    </string>
+
+    <string name="roomAssignments">
+        <a href="http://phunc.psiada.org/rooms/">View Room Assignments</a>
+    </string>
+
+
+
+
+    <string name="eateries">
+        India Pavilion ($) Indian\n
+        222 E. Calder Way\n\n
+
+        Pita Cabana ($) Middle Eastern\n
+        334 E Calder Way\n\n
+
+        Yallah Taco ($) Mexican\n
+        217 McAllister Alley\n\n
+
+        Cozy Thai ($$) Thai\n
+        232 S. Allen Street\n\n
+
+        Irving’s Bagels ($) Bagels, Sandwiches\n
+        110 E College Ave\n\n
+
+        Fiddlehead ($) Salads\n
+        134 W College Ave\n\n
+
+        Bagel Crust ($) Bagels, Sandwiches\n
+        332 E Calder Way\n\n
+
+        Little Szechuan ($) Chinese\n
+        228 W College Ave\n\n
+
+        The Corner Room ($$) American\n
+        100 W. College Avenue\n\n
+
+        Chipotle ($) Mexican\n
+        116 Heister Street\n\n
+
+        Pho 11 ($) Vietnamese\n
+        146 N Atherton St\n\n
+
+        The Deli ($$) Pizza, Sandwiches\n
+        113 Heister Street\n\n
+
+        Big Bowl Noodle House ($) Chinese\n
+        418 E College Ave\n
+        *Cash Only\n\n
+
+        Baby’s Burgers &amp; Shakes ($) Diner\n
+        131 S Garner St\n\n
+
+        Green Bowl ($$) Asian Fusion, Chinese, Salads\n
+        131 W. Beaver Avenue\n\n
+
+        Underground Burgers &amp; Crepes ($) Burgers, Crepes\n
+        218 E Calder Way\n\n
+
+        The Tavern ($$) American\n
+        220 E. College Avenue\n\n
+
+        Galanga ($$) Thai\n
+        454 E. College Avenue\n\n
+
+
+        <b>COFFEE- CLOSE TO OR ON CAMPUS</b>
+
+        Au Bon Pain\n\n
+        Kern Building\n
+
+        Dunkin Donuts\n
+        200 W College Ave\n\n
+
+        Irving’s Bagels\n
+        110 E College Ave\n\n
+
+        Panera Bread\n
+        148 S Allen St\n\n
+
+        Penn State Creamery\n
+        Food Science Building\n\n
+
+        Saint’s Cafe\n
+        123 W Beaver Ave\n\n
+
+        Starbucks\n
+        HUB\n
+        Bottom Level of Library\n
+        232 W College Ave\n\n
+
+        Webster’s Bookstore Cafe\n
+        133 E Beaver Ave\n\n
+
+
+    </string>
+
+
+</resources>

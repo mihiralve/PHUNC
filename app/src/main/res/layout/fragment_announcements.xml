@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resources"
+    tools:context="org.psiada.app.phunc.Announcements">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/frag_announcements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Welcome to PHUNC V!"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/phunc_v_logo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/frag_announcements"
+                android:src="@drawable/phunc_v_logo2" />
+
+            <TextView
+                android:id="@+id/phunc_v_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phunc_v_logo"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="A House Divided"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/heading_announcements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phunc_v_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Announcements"
+                android:textSize="25sp" />
+
+            <WebView
+                android:id="@+id/web_announcements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading_announcements"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/announcements_loading"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/heading_announcements"
+                android:text="Loading..."
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/heading_sponsors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/web_announcements"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Sponsors"
+                android:textSize="25sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/heading_sponsors"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sponsorLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/cgs_logo" />
+
+
+                <ImageView
+                    android:id="@+id/sponsorRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/liberal_arts_logo" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

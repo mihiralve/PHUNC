@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_announcements"
+            android:icon="@drawable/ic_announcement"
+            android:title="Announcements" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_menu_schedule"
+            android:title="Schedule"
+            />
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Resources" />
+        <item
+            android:id="@+id/nav_restaurant_guide"
+            android:icon="@drawable/ic_menu_restaurant"
+            android:title="Restaurant Guide" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_comment"
+            android:title="Feedback" ></item>
+    </group>
+
+</menu>

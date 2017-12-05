@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.psiada.app.phunc.Resources_passing_defeating">
+
+    <!-- TODO: Update blank fragment layout -->
+    <WebView
+        android:id="@+id/passingDefeatingPacket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/passing_defeating_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:text="Loading..."
+        android:textSize="20dp"
+        android:visibility="visible"/>
+
+
+</FrameLayout>
