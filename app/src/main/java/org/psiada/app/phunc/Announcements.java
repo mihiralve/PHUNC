@@ -9,6 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
@@ -79,6 +83,17 @@ public class Announcements extends Fragment {
         });
 
         announcements.loadUrl("http://phunc.psiada.org/2669-2/");
+        ImageView phuncVlogo = (ImageView)rootView.findViewById(R.id.phunc_v_logo);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/phunc_v_logo2.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(phuncVlogo);
+
+        ImageView liberalartssponsor = (ImageView)rootView.findViewById(R.id.sponsorRight);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(liberalartssponsor);
+
+        ImageView cgssponsor = (ImageView)rootView.findViewById(R.id.sponsorLeft);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(cgssponsor);
+
+
+
 
         return rootView;
     }

@@ -8,7 +8,11 @@ import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
@@ -72,6 +76,8 @@ public class weekend_schedule extends Fragment {
         rooms.setClickable(true);
         rooms.setMovementMethod(LinkMovementMethod.getInstance());
 
+
+        
 
         // Inflate the layout for this fragment
         return rootView;
