@@ -76,8 +76,11 @@ public class weekend_schedule extends Fragment {
         rooms.setClickable(true);
         rooms.setMovementMethod(LinkMovementMethod.getInstance());
 
+        ImageView schedule = (ImageView) rootView.findViewById(R.id.schedule);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(schedule);
 
-        
+
+
 
         // Inflate the layout for this fragment
         return rootView;

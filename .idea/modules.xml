@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PHUNC-Android.iml" filepath="$PROJECT_DIR$/PHUNC-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PHUNC3.iml" filepath="$PROJECT_DIR$/PHUNC3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\mihir\AndroidStudioProjects\PHUNC-Android\PHUNC3.iml" filepath="C:\Users\mihir\AndroidStudioProjects\PHUNC-Android\PHUNC3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

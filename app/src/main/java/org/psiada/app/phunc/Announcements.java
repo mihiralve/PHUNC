@@ -83,14 +83,14 @@ public class Announcements extends Fragment {
         });
 
         announcements.loadUrl("http://phunc.psiada.org/2669-2/");
-        ImageView phuncVlogo = (ImageView)rootView.findViewById(R.id.phunc_v_logo);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/phunc_v_logo2.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(phuncVlogo);
+        ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.phunc_v_logo);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/phunc_v_logo2.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
 
-        ImageView liberalartssponsor = (ImageView)rootView.findViewById(R.id.sponsorRight);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(liberalartssponsor);
+        ImageView sponsorRight = (ImageView)rootView.findViewById(R.id.sponsorRight);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorRight);
 
-        ImageView cgssponsor = (ImageView)rootView.findViewById(R.id.sponsorLeft);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(cgssponsor);
+        ImageView sponsorLeft = (ImageView)rootView.findViewById(R.id.sponsorLeft);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorLeft);
 
 
 
