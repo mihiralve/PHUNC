@@ -41,6 +41,13 @@
     \n8:00 pm – 10:00 pm
     </string>
 
+
+    <string name="tabFood">Food</string>
+
+    <string name="tabCoffee">Coffee</string>
+
+    <string name="tabBars">Bars</string>
+
     <string name="martaInfo">
         <b>Marta Millar</b>
         \n<i>Secretary General</i>
@@ -225,8 +232,6 @@
     <string name="roomAssignments">
         <a href="http://phunc.psiada.org/rooms/">View Room Assignments</a>
     </string>
-
-
 
 
     <string name="eateries">

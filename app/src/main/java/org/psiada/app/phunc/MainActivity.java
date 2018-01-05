@@ -17,7 +17,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, weekend_schedule.OnFragmentInteractionListener, Announcements.OnFragmentInteractionListener,
-        Resources.OnFragmentInteractionListener, Guides.OnFragmentInteractionListener, Contact.OnFragmentInteractionListener, Feedback.OnFragmentInteractionListener {
+        Resources.OnFragmentInteractionListener, Guides.OnFragmentInteractionListener, Contact.OnFragmentInteractionListener, Feedback.OnFragmentInteractionListener,
+        Restaurants.OnFragmentInteractionListener, Coffee.OnFragmentInteractionListener, Bars.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,18 +49,6 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
         }
 
-
-
-    /*   FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-    */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

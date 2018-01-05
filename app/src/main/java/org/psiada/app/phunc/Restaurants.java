@@ -1,31 +1,29 @@
 package org.psiada.app.phunc;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Guides.OnFragmentInteractionListener} interface
+ * {@link Restaurants.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Guides#newInstance} factory method to
+ * Use the {@link Restaurants#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Guides extends Fragment {
+public class Restaurants extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -34,11 +32,10 @@ public class Guides extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Context mContext;
 
     private OnFragmentInteractionListener mListener;
 
-    public Guides() {
+    public Restaurants() {
         // Required empty public constructor
     }
 
@@ -48,11 +45,11 @@ public class Guides extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Guides.
+     * @return A new instance of fragment Restaurants.
      */
     // TODO: Rename and change types and number of parameters
-    public static Guides newInstance(String param1, String param2) {
-        Guides fragment = new Guides();
+    public static Restaurants newInstance(String param1, String param2) {
+        Restaurants fragment = new Restaurants();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,25 +63,15 @@ public class Guides extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        final View rootView = inflater.inflate(R.layout.fragment_restaurant, container, false);
 
-        final View rootView = inflater.inflate(R.layout.fragment_guides, container, false);
-
-
-        ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
-
-        TabLayout tabLayout = (TabLayout) rootView.findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-
-
-        /*
         TextView menu1 = (TextView)rootView.findViewById(R.id.menu1);
         menu1.setClickable(true);
         menu1.setMovementMethod(LinkMovementMethod.getInstance());
@@ -247,63 +234,13 @@ public class Guides extends Fragment {
         ImageView menuImage18 = (ImageView)rootView.findViewById(R.id.menuImage18);
         Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/tavern.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage18);
 
-        */
+
 
 
 
 
         // Inflate the layout for this fragment
         return rootView;
-    }
-
-    private void setupViewPager(ViewPager viewpager){
-
-        Adapter adapter = new Adapter(getChildFragmentManager());
-
-        adapter.addFragment(new Restaurants(), "Food");
-        adapter.addFragment(new Coffee(), "Coffee");
-        adapter.addFragment(new Bars(), "Bars");
-        viewpager.setAdapter(adapter);
-
-
-
-    }
-
-    static class Adapter extends FragmentPagerAdapter{
-
-        private final List<Fragment> fragmentList = new ArrayList<>();
-        private final List<String> fragmentTitleList = new ArrayList<>();
-
-
-        public Adapter(FragmentManager manager){
-            super(manager);
-        }
-
-        @Override
-        public Fragment getItem(int position){
-            return fragmentList.get(position);
-        }
-
-        @Override
-        public int getCount(){
-            return fragmentList.size();
-        }
-
-        public void addFragment(Fragment fragment, String title){
-            fragmentList.add(fragment);
-            fragmentTitleList.add(title);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position){
-            return fragmentTitleList.get(position);
-        }
-    }
-
-    private void goToUrl (String url) {
-        Uri uriUrl = Uri.parse(url);
-        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-        startActivity(launchBrowser);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

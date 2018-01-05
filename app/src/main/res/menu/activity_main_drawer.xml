@@ -18,7 +18,7 @@
         <item
             android:id="@+id/nav_restaurant_guide"
             android:icon="@drawable/ic_menu_restaurant"
-            android:title="Restaurant Guide" />
+            android:title="Food &amp; Drink" />
         <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_menu_send"
@@ -26,7 +26,7 @@
         <item
             android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_menu_comment"
-            android:title="Feedback" ></item>
+            android:title="Feedback" />
     </group>
 
 </menu>
