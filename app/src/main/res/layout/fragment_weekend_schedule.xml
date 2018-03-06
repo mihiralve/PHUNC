@@ -1,53 +1,33 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.psiada.app.phunc.weekend_schedule">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ScheduleViewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <RelativeLayout
+        <android.support.design.widget.TabLayout
+            android:id="@+id/ScheduleTabs"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" >
 
-            <TextView
-                android:id="@+id/frag_schedule"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
+            <android.support.design.widget.TabItem
                 android:text="Schedule"
-                android:textSize="25sp" />
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
 
-            <TextView
-                android:id="@+id/roomAssignments"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="8dp"
-                android:textColorLink="#2f4f4f"
-                android:text="@string/roomAssignments"
-                android:layout_below="@id/frag_schedule"/>
+            <android.support.design.widget.TabItem
+                android:text="Room Assignments"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </android.support.design.widget.TabLayout>
 
 
+    </android.support.v4.view.ViewPager>
 
-            <ImageView
-                android:id="@+id/schedule"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/roomAssignments"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="5dp"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"/>
-
-        </RelativeLayout>
-
-    </ScrollView>
-
-</FrameLayout>
+</RelativeLayout>

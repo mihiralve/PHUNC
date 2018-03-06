@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PHUNC</string>
+    <string name="app_name">PUNC</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -225,6 +225,13 @@
     <string name="menu18">
         <a href="https://goo.gl/maps/oWTtMCHouHP2">
         <b>The Tavern</b> ($$) <i>American</i>
+        220 E. College Avenue
+        </a>
+    </string>
+
+    <string name="coffee1">
+        <a href="https://goo.gl/maps/wb52RKH3dY12">
+        <b>Au Bon Pain</b>
         220 E. College Avenue
         </a>
     </string>

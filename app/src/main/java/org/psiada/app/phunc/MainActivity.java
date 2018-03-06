@@ -18,7 +18,8 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, weekend_schedule.OnFragmentInteractionListener, Announcements.OnFragmentInteractionListener,
         Resources.OnFragmentInteractionListener, Guides.OnFragmentInteractionListener, Contact.OnFragmentInteractionListener, Feedback.OnFragmentInteractionListener,
-        Restaurants.OnFragmentInteractionListener, Coffee.OnFragmentInteractionListener, Bars.OnFragmentInteractionListener{
+        Restaurants.OnFragmentInteractionListener, Coffee.OnFragmentInteractionListener, Bars.OnFragmentInteractionListener, Schedule.OnFragmentInteractionListener,
+        Rooms.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

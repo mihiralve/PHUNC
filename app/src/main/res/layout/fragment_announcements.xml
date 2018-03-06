@@ -21,13 +21,13 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Welcome to PHUNC V!"
+                android:text="Welcome to PUNC XI!"
                 android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/phunc_v_logo"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_below="@id/frag_announcements"
                  />
 
@@ -38,7 +38,7 @@
                 android:layout_below="@id/phunc_v_logo"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:text="A House Divided"
+                android:text="Eye of the Storm"
                 android:textSize="20sp"
                 android:textStyle="italic"/>
 
@@ -50,7 +50,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Announcements"
+                android:text="Updates"
                 android:textSize="25sp" />
 
             <WebView
@@ -83,7 +83,7 @@
                 android:textSize="25sp" />
 
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_below="@id/heading_sponsors"
@@ -108,8 +108,15 @@
                     android:layout_weight="1"
                      />
 
+            </LinearLayout>-->
 
-            </LinearLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/sponsors"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/heading_sponsors" />
+
+
         </RelativeLayout>
 
     </ScrollView>

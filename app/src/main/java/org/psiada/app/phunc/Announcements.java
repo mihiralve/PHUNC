@@ -3,7 +3,9 @@ package org.psiada.app.phunc;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,9 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 /**
@@ -34,6 +39,21 @@ public class Announcements extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    ViewPager viewPager;
+    ViewPagerAdapter adapter;
+    private Handler handler;
+    private Runnable update;
+
+    private String[] images = {
+
+            "http://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png",
+            "http://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png",
+            "http://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg",
+            "http://punc.psiada.org/wp-content/uploads/2018/01/SIA-logo.png",
+            "http://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png"
+    };
+
 
     public Announcements() {
         // Required empty public constructor
@@ -82,18 +102,43 @@ public class Announcements extends Fragment {
             }
         });
 
-        announcements.loadUrl("http://phunc.psiada.org/2669-2/");
+        announcements.loadUrl("http://punc.psiada.org/app-announcements/");
         ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.phunc_v_logo);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/phunc_v_logo2.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
+        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/02/PUNC-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
 
-        ImageView sponsorRight = (ImageView)rootView.findViewById(R.id.sponsorRight);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorRight);
+//        ImageView sponsorRight = (ImageView)rootView.findViewById(R.id.sponsorRight);
+//        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorRight);
+//
+//        ImageView sponsorLeft = (ImageView)rootView.findViewById(R.id.sponsorLeft);
+//        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorLeft);
 
-        ImageView sponsorLeft = (ImageView)rootView.findViewById(R.id.sponsorLeft);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorLeft);
+        viewPager = (ViewPager)rootView.findViewById(R.id.sponsors);
+        adapter = new ViewPagerAdapter(getActivity(), images);
+        viewPager.setAdapter(adapter);
+
+        handler = new Handler();
 
 
+        update = new Runnable() {
+            int currentPage = 0;
+            int NUM_PAGES = 5;
 
+            public void run() {
+                if (currentPage == NUM_PAGES - 1) {
+                    currentPage = 0;
+                }
+                viewPager.setCurrentItem(currentPage++, true);
+            }
+        };
+
+
+        new Timer().schedule(new TimerTask() {
+
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        }, 400, 2000);
 
         return rootView;
     }
