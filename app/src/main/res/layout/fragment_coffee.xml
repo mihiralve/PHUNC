@@ -4,11 +4,369 @@
     android:layout_height="match_parent"
     tools:context="org.psiada.app.phunc.Coffee">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp"
-        android:text="Coffee" />
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/cafeImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe1"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/cafeImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe1"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe2a"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/cafe2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafe2a"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe2b"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center" />
+
+
+            <ImageView
+                android:id="@+id/cafeImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe2b"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe3"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/cafeImage4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe3"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage4"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe4"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/cafeImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe4"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage5"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe5"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/cafeImage6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe5"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage6"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe6"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/cafeImage7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe6"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage7"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe7"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/cafeImage8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe7"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage8"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe8"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+
+
+            <ImageView
+                android:id="@+id/cafeImage9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe8"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage9"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe9"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/cafeImage10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe9"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe10a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage10"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe10a"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/cafe10b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafe10a"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe10b"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/cafeImage11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe10b"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage11"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe11"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>
+

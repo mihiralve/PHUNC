@@ -4,9 +4,15 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
@@ -65,6 +71,91 @@ public class Coffee extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View rootView = inflater.inflate(R.layout.fragment_coffee, container, false);
+
+        TextView cafe1 = (TextView)rootView.findViewById(R.id.cafe1);
+        cafe1.setClickable(true);
+        cafe1.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage1 = (ImageView)rootView.findViewById(R.id.cafeImage1);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/abba-java.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage1);
+
+        TextView cafe2a = (TextView)rootView.findViewById(R.id.cafe2a);
+        cafe2a.setClickable(true);
+        cafe2a.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView cafe2b = (TextView)rootView.findViewById(R.id.cafe2b);
+        cafe2b.setClickable(true);
+        cafe2b.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage2 = (ImageView)rootView.findViewById(R.id.cafeImage2);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/Au-Bon-Pain-Coffee.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage2);
+
+        TextView cafe3 = (TextView)rootView.findViewById(R.id.cafe3);
+        cafe3.setClickable(true);
+        cafe3.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage3 = (ImageView)rootView.findViewById(R.id.cafeImage3);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/CheeseShoppe.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage3);
+
+        TextView cafe4 = (TextView)rootView.findViewById(R.id.cafe4);
+        cafe4.setClickable(true);
+        cafe4.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage4 = (ImageView)rootView.findViewById(R.id.cafeImage4);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/Dukin-donuts-donut.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage4);
+
+        TextView cafe5 = (TextView)rootView.findViewById(R.id.cafe5);
+        cafe5.setClickable(true);
+        cafe5.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage5 = (ImageView)rootView.findViewById(R.id.cafeImage5);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/irvings_bagels.jpeg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage5);
+
+        TextView cafe6 = (TextView)rootView.findViewById(R.id.cafe6);
+        cafe6.setClickable(true);
+        cafe6.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage6 = (ImageView)rootView.findViewById(R.id.cafeImage6);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/panera-bread.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage6);
+
+        TextView cafe7 = (TextView)rootView.findViewById(R.id.cafe7);
+        cafe7.setClickable(true);
+        cafe7.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage7 = (ImageView)rootView.findViewById(R.id.cafeImage7);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/penn-state-creamery.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage7);
+
+        TextView cafe8 = (TextView)rootView.findViewById(R.id.cafe8);
+        cafe8.setClickable(true);
+        cafe8.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage8 = (ImageView)rootView.findViewById(R.id.cafeImage8);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/saints-cafe.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage8);
+
+        TextView cafe9 = (TextView)rootView.findViewById(R.id.cafe9);
+        cafe9.setClickable(true);
+        cafe9.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage9 = (ImageView)rootView.findViewById(R.id.cafeImage9);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/sowers-harvest-cafe.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage9);
+
+        TextView cafe10a = (TextView)rootView.findViewById(R.id.cafe10a);
+        cafe10a.setClickable(true);
+        cafe10a.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView cafe10b = (TextView)rootView.findViewById(R.id.cafe10b);
+        cafe10b.setClickable(true);
+        cafe10b.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage10 = (ImageView)rootView.findViewById(R.id.cafeImage10);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/starbucks.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage10);
+
+        TextView cafe11 = (TextView)rootView.findViewById(R.id.cafe11);
+        cafe11.setClickable(true);
+        cafe11.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage11 = (ImageView)rootView.findViewById(R.id.cafeImage11);
+        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/websters.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage11);
 
 
         return rootView;
