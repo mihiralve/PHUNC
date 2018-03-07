@@ -229,6 +229,116 @@
         </a>
     </string>
 
+
+
+    <string name="ActualMenu1">
+        <a href="http://www.indiapavilion.net/menu.html">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu2">
+        <a href="https://www.beyondmenu.com/31666/state-college/pita-cabana-grill-state-college-16801.aspx#all-day-menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu3">
+        <a href="https://www.grubhub.com/restaurant/yallah-taco-217-mcallister-bldg-state-college/478422">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu4">
+        <a href="https://www.cozythaibistro.com/menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu5">
+        <a href="http://www.irvingsstatecollege.com/instore-menu/">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu6">
+        <a href="http://www.fiddleheadstatecollege.com/#menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu7">
+        <a href="https://squareup.com/store/bagel-crust-2">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu8">
+        <a href="https://eatstreet.com/state-college-pa/restaurants/little-szechuan-state-college">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu9">
+        <a href="https://www.cornerroom.com/">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu10">
+        <a href="https://www.chipotle.com/menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu11">
+        <a href="http://pho11.net/">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu12">
+        <a href="https://www.allmenus.com/pa/state-college/280614-deli-restaurant/menu/">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu13">
+        <a href="http://places.singleplatform.com/big-bowl-noodle-house-2/menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu14">
+        <a href="http://www.babysburgers.com/menu/">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu15">
+        <a href="https://www.statecollege.com/dining/6361/green-bowl/">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu16">
+        <a href="http://places.singleplatform.com/underground-burgers--crepes-0/menu?ref=google">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu17">
+        <a href="https://foursquare.com/v/galanga-by-cozy-thai/4e09102fd1640223a4a655dd/menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu18">
+        <a href="http://thetavern.com/weekend-menu/#">
+        <b>Menu</b>
+        </a>
+    </string>
+
     <string name="coffee1">
         <a href="https://goo.gl/maps/wb52RKH3dY12">
         <b>Au Bon Pain</b>
@@ -239,7 +349,6 @@
     <string name="roomAssignments">
         <a href="http://phunc.psiada.org/rooms/">View Room Assignments</a>
     </string>
-
 
     <string name="eateries">
         India Pavilion ($) Indian\n
@@ -301,6 +410,45 @@
 
     </string>
 
+    <string name="Menus">
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+
+        Menu \n\n
+    </string>
+
+
     <string name="cafe1">
         <a href="https://goo.gl/maps/YeJapfc1aJ42">
         <b> Abba Java Coffee House</b>
@@ -316,7 +464,7 @@
     </string>
 
     <string name="cafe2b">
-        <a href="https://goo.gl/maps/UgbprziLYfG2">
+        <a href="https://goo.gl/maps/TSz2VhTWfKp">
         <b>Au Bon Pain</b>
         Information Sciences and Technology Buidling
         </a>

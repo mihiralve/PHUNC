@@ -44,6 +44,23 @@
                 android:textAlignment="center"
                 />
 
+            <TextView
+                android:id="@+id/ActualMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu1"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage2"
                 android:layout_width="match_parent"
@@ -52,7 +69,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu1"
+                android:layout_below="@id/ActualMenu1"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -73,6 +90,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu2"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage3"
                 android:layout_width="match_parent"
@@ -81,7 +116,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu2"
+                android:layout_below="@id/ActualMenu2"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -102,6 +137,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu3"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage4"
                 android:layout_width="match_parent"
@@ -110,7 +163,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu3"
+                android:layout_below="@id/ActualMenu3"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -132,6 +185,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu4"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu4"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage5"
                 android:layout_width="match_parent"
@@ -140,7 +211,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu4"
+                android:layout_below="@id/ActualMenu4"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -159,6 +230,23 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu5"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu5"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage6"
                 android:layout_width="match_parent"
@@ -167,7 +255,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu5"
+                android:layout_below="@id/ActualMenu5"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -186,6 +274,23 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu6"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu6"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage7"
                 android:layout_width="match_parent"
@@ -194,7 +299,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu6"
+                android:layout_below="@id/ActualMenu6"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -213,6 +318,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu7"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu7"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage8"
                 android:layout_width="match_parent"
@@ -221,7 +344,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu7"
+                android:layout_below="@id/ActualMenu7"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -241,6 +364,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu8"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu8"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage9"
                 android:layout_width="match_parent"
@@ -249,7 +390,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu8"
+                android:layout_below="@id/ActualMenu8"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -268,6 +409,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu9"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu9"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage10"
                 android:layout_width="match_parent"
@@ -276,7 +435,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu9"
+                android:layout_below="@id/ActualMenu9"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -295,6 +454,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu10"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu10"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage11"
                 android:layout_width="match_parent"
@@ -303,7 +480,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu10"
+                android:layout_below="@id/ActualMenu10"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -322,6 +499,23 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu11"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu11"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage12"
                 android:layout_width="match_parent"
@@ -330,7 +524,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu11"
+                android:layout_below="@id/ActualMenu11"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -349,6 +543,23 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu12"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu12"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage13"
                 android:layout_width="match_parent"
@@ -357,7 +568,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu12"
+                android:layout_below="@id/ActualMenu12"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -376,6 +587,23 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu13"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu13"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage14"
                 android:layout_width="match_parent"
@@ -384,7 +612,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu13"
+                android:layout_below="@id/ActualMenu13"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -403,6 +631,23 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu14"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu14"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/menuImage15"
                 android:layout_width="match_parent"
@@ -411,7 +656,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu14"
+                android:layout_below="@id/ActualMenu14"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -430,6 +675,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu15"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu15"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage16"
                 android:layout_width="match_parent"
@@ -438,7 +701,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu15"
+                android:layout_below="@id/ActualMenu15"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -457,6 +720,24 @@
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
+            <TextView
+                android:id="@+id/ActualMenu16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu16"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu16"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage17"
                 android:layout_width="match_parent"
@@ -465,7 +746,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu16"
+                android:layout_below="@id/ActualMenu16"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -485,6 +766,24 @@
                 android:textAlignment="center"
                 />
 
+            <TextView
+                android:id="@+id/ActualMenu17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu17"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu17"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
             <ImageView
                 android:id="@+id/menuImage18"
                 android:layout_width="match_parent"
@@ -493,7 +792,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/menu17"
+                android:layout_below="@id/ActualMenu17"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -511,6 +810,24 @@
                 android:textSize="18sp"
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/ActualMenu18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu18"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu18"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
 
 
         </RelativeLayout>
