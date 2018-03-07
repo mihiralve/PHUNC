@@ -5,10 +5,338 @@
     tools:context="org.psiada.app.phunc.Bars">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:text="Bars" />
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/barImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar1"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar1"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar2"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar2"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar3"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar3"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage4"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar4"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar4"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage5"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar5"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar5"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage6"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar6"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar6"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage7"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar7"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar7"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage8"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar8"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar8"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage9"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar9"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar9"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage10"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar10"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/barImage11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/bar10"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/bar11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/barImage11"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bar11"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </FrameLayout>
