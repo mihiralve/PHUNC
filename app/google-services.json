@@ -42,8 +42,46 @@
             {
               "client_id": "364012268181-mhiai7gp2mogi7s71trda50f71t7j9im.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "364012268181-evftgfe013fovsd018e2ehkuvra09gm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.PSIADA.PUNC"
+              }
             }
           ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364012268181:android:d72342f1fa5e916b",
+        "android_client_info": {
+          "package_name": "org.psiada.app.punc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364012268181-mhiai7gp2mogi7s71trda50f71t7j9im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoGXvHK84eYVUOmr2dKjV2ZzzbBDqkYSo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

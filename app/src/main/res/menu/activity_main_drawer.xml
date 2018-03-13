@@ -24,9 +24,25 @@
             android:icon="@drawable/ic_menu_send"
             android:title="Contact" />
         <item
+        android:id="@+id/nav_transportation"
+        android:icon="@drawable/ic_menu_comment"
+        android:title="Transportation" />
+
+        <item
+            android:id="@+id/nav_charity"
+            android:icon="@drawable/ic_people"
+            android:title="Charity" />
+
+        <item
+            android:id="@+id/nav_merchandise"
+            android:icon="@drawable/ic_merch"
+            android:title="Merchandise" />
+
+        <item
             android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_menu_comment"
             android:title="Feedback" />
+
     </group>
 
 </menu>

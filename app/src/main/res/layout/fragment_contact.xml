@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.psiada.app.phunc.Contact">
+    tools:context="org.psiada.app.punc.Contact">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -46,7 +46,7 @@
                         android:id="@+id/contact1_info"
                         android:layout_toRightOf="@id/contact1_headshot"
                         android:layout_marginLeft="10dp"
-                        android:text="@string/martaInfo"
+                        android:text="@string/sgInfo"
                         android:textSize="16sp"/>
 
                     <TextView
@@ -57,7 +57,7 @@
                         android:layout_toRightOf="@id/contact1_headshot"
                         android:layout_below="@id/contact1_info"
                         android:layout_marginLeft="10dp"
-                        android:text="@string/martaEmail"
+                        android:text="@string/sgEmail"
                         android:autoLink="email"
                         android:textSize="16sp"/>
 
@@ -69,7 +69,7 @@
                         android:layout_toRightOf="@id/contact1_headshot"
                         android:layout_below="@id/contact1_email"
                         android:layout_marginLeft="10dp"
-                        android:text="@string/martaPhone"
+                        android:text="@string/sgPhone"
                         android:autoLink="phone"
                         android:textSize="16sp"/>
 
@@ -99,7 +99,7 @@
                         android:id="@+id/contact2_info"
                         android:layout_toRightOf="@id/contact2_headshot"
                         android:layout_marginLeft="10dp"
-                        android:text="@string/tomInfo"
+                        android:text="@string/cosInfo"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
                         android:layout_toRightOf="@id/contact2_headshot"
                         android:layout_below="@id/contact2_info"
                         android:layout_marginLeft="10dp"
-                        android:text="@string/tomEmail"
+                        android:text="@string/cosEmail"
                         android:autoLink="email"
                         android:textSize="16sp"/>
 
@@ -121,7 +121,7 @@
                         android:layout_toRightOf="@id/contact2_headshot"
                         android:layout_below="@id/contact2_email"
                         android:layout_marginLeft="10dp"
-                        android:text="@string/tomPhone"
+                        android:text="@string/cosPhone"
                         android:autoLink="phone"
                         android:textSize="16sp"/>
 
@@ -151,7 +151,7 @@
                     android:id="@+id/contact3_info"
                     android:layout_toRightOf="@id/contact3_headshot"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/danInfo"
+                    android:text="@string/usgInfo"
                     android:textSize="16sp"/>
 
                 <TextView
@@ -162,7 +162,7 @@
                     android:layout_toRightOf="@id/contact3_headshot"
                     android:layout_below="@id/contact3_info"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/danEmail"
+                    android:text="@string/usgEmail"
                     android:autoLink="email"
                     android:textSize="16sp"/>
 
@@ -174,13 +174,23 @@
                     android:layout_toRightOf="@id/contact3_headshot"
                     android:layout_below="@id/contact3_email"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/danPhone"
+                    android:text="@string/usgPhone"
                     android:autoLink="phone"
                     android:textSize="16sp"/>
 
             </RelativeLayout>
 
-            <RelativeLayout
+
+            <!--ImageView
+                android:id="@+id/contact4_headshot"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/contact3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>-->
+
+            <!--<RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/contact3"
@@ -190,13 +200,7 @@
                 android:layout_marginBottom="10dp"
                 android:id="@+id/contact4">
 
-                <ImageView
-                    android:id="@+id/contact4_headshot"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"/>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -232,7 +236,7 @@
                     android:autoLink="phone"
                     android:textSize="16sp"/>
 
-            </RelativeLayout>
+            </RelativeLayout>-->
 
 
         </RelativeLayout>

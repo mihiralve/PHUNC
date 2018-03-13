@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.psiada.app.phunc.Resources">
+    tools:context="org.psiada.app.punc.Resources">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -20,12 +20,31 @@
             android:textSize="25sp"
             android:clickable="true"/>
 
+        <TextView
+            android:id="@+id/guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resource_heading"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:text="Conference Guide"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/divider0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/guide"
+            android:layout_marginLeft="5dp"
+            android:background="#D3D3D3"/>
+
 
         <TextView
             android:id="@+id/mun_101"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/resource_heading"
+            android:layout_below="@id/divider0"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             android:layout_marginLeft="5dp"

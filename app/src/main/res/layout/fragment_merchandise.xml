@@ -1,0 +1,220 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.psiada.app.punc.Merchandise">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_merch">
+            <TextView
+                android:id="@+id/merch_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:text="Merchandise"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/merch_header"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/merchandise1">
+
+                <ImageView
+                    android:id="@+id/merch1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch1_info"
+                    android:layout_toRightOf="@id/merch1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Shot Glass"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch1_price"
+                    android:layout_toRightOf="@id/merch1"
+                    android:layout_below="@id/merch1_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="$3"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/merchandise1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/merchandise2">
+
+                <ImageView
+                    android:id="@+id/merch2"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch2_info"
+                    android:layout_toRightOf="@id/merch2"
+                    android:layout_marginLeft="10dp"
+                    android:text="Phone Wallet"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch2_price"
+                    android:layout_toRightOf="@id/merch2"
+                    android:layout_below="@id/merch2_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="$3"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/merchandise2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/merchandise3">
+
+                <ImageView
+                    android:id="@+id/merch3"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch3_info"
+                    android:layout_toRightOf="@id/merch3"
+                    android:layout_marginLeft="10dp"
+                    android:text="Bottle Opener"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch3_price"
+                    android:layout_toRightOf="@id/merch3"
+                    android:layout_below="@id/merch3_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="$3"
+                    android:autoLink="email"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/merchandise3"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_margin="8dp"
+                android:text="@string/merchDesc"
+                android:textSize="18sp"/>
+
+
+            <!--ImageView
+                android:id="@+id/contact4_headshot"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/contact3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>-->
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/contact4">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact4_info"
+                    android:layout_toRightOf="@id/contact4_headshot"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/annaInfo"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact4_email"
+                    android:layout_toRightOf="@id/contact4_headshot"
+                    android:layout_below="@id/contact4_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/annaEmail"
+                    android:autoLink="email"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/contact4_phone"
+                    android:layout_toRightOf="@id/contact4_headshot"
+                    android:layout_below="@id/contact4_email"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/annaPhone"
+                    android:autoLink="phone"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

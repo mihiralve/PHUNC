@@ -48,55 +48,55 @@
 
     <string name="tabBars">Bars</string>
 
-    <string name="martaInfo">
-        <b>Marta Millar</b>
+    <string name="sgInfo">
+        <b>William Juppenlatz</b>
         \n<i>Secretary General</i>
     </string>
 
-    <string name="martaEmail">
-        sg.phunc@psiada.org
+    <string name="sgEmail">
+        sg.punc@psiada.org
     </string>
 
-    <string name="martaPhone">
-        814-880-0080
+    <string name="sgPhone">
+        717-813-9518
     </string>
 
-    <string name="tomInfo">
-        <b>Tom Santee</b>
+    <string name="cosInfo">
+        <b>Kayla Wendt</b>
         \n<i>Chief of Staff</i>
     </string>
 
-    <string name="tomEmail">
-        cos.phunc@psiada.org
+    <string name="cosEmail">
+        cos.punc@psiada.org
     </string>
 
-    <string name="tomPhone">
-        610-297-1083
+    <string name="cosPhone">
+        215-896-7195
     </string>
 
-    <string name="danInfo">
-        <b>Daniel Donaher</b>
+    <string name="usgInfo">
+        <b>Kelly Harrington</b>
         \n<i>USG for Crisis and Committee Development</i>
     </string>
 
-    <string name="danEmail">
-        crisis.phunc@psiada.org
+    <string name="usgEmail">
+        crisis.punc@psiada.org
     </string>
 
-    <string name="danPhone">
-        610-316-7074
+    <string name="usgPhone">
+        215-817-3729
     </string>
 
-    <string name="annaInfo">
+    <string name="chargeInfo">
         <b>Anna Lin</b>
         \n<i>Chargée d\'Affaires</i>
     </string>
 
-    <string name="annaEmail">
+    <string name="chargeEmail">
         charge.phunc@psiada.org
     </string>
 
-    <string name="annaPhone">
+    <string name="chargePhone">
         973-868-2671
     </string>
 
@@ -228,7 +228,6 @@
         220 E. College Avenue
         </a>
     </string>
-
 
 
     <string name="ActualMenu1">
@@ -541,8 +540,6 @@
     </string>
 
 
-
-
     <string name="Coffee">
         Abba Java Coffee House \n
         299 Locust Ln \n\n
@@ -660,7 +657,6 @@
     </string>
 
 
-
     <string name="Bars">
         Cafe 210 West \n
         210 West College Ave \n\n
@@ -695,12 +691,46 @@
         Zeno\'s Pub\n
         100 W College Ave\n\n
 
-
-
-
     </string>
 
+    <string name="businessBuilding">
+        <a href="https://goo.gl/maps/wW3YQDvPz1U2">Business Building</a>
+    </string>
 
+    <string name="atherton">
+        <a href="https://goo.gl/maps/Mk1xcLb3BzE2">Atherton Hotel</a>
+    </string>
 
+    <string name="goldenWok">
+        <a href="https://goo.gl/maps/PdfRAqHGiLA2">Golden Wok</a>
+    </string>
+
+    <string name="icySnow">
+        <a href="https://goo.gl/maps/Nxmx7ccDi2r">Chronic Town</a>
+    </string>
+
+    <string name="transportDesc">
+        Uber and Lyft can be used to get around campus. The Penn State Cata Busses are also a
+        free option, and the Blue Loop (BL) and White Loop (WL) can be used to  get around campus and downton.
+    </string>
+
+    <string name="busRoutes">
+        <a href="http://realtime.catabus.com/InfoPoint/?mobile=True#route_page">View bus routes</a>
+    </string>
+
+    <string name="merchDesc">
+        Venmo us @William-Juppenlatz or pay with cash!
+        \nPlease include "PUNC Merch", your name, and your committee name in the message if you use Venmo.
+    </string>
+
+    <string name="charityDesc">
+        United Nations Campus Advocates is a campus chapter of a nation wide movement to rally support for the work of the United Nations. At Penn State, we advocate to our peers about all the good that the UN accomplishes. This year we are supporting a campaign by the UN Foundation called Shot@Life.  Funds raised through Shot@Life aid Unicef, the World Health Organization and Gavi, the Vaccine Alliance, in the coordination, purchase, delivery and administering
+        of vaccines to children in developing countries. To get an idea of the impact of  donations on this effort, just $25 provides a vaccine for one child against polio, measles, diarrheal disease, and pneumonia for life.
+        \nLean more at ShotatLife.org.
+    </string>
+
+    <string name="donation">
+        You can donate to Shot@Life campaign with cash or Venmo @William-Juppenlatz with the message "Shot@Life Donation". We thank you for your support!
+    </string>
 
 </resources>

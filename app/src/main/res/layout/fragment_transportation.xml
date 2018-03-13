@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.psiada.app.punc.Transportation">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/trasport_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="Locations and Transportation"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/trasport_header"
+            android:text="@string/businessBuilding"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/atherton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/business"
+            android:text="@string/atherton"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/goldenWok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/atherton"
+            android:text="@string/goldenWok"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/icySnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/goldenWok"
+            android:text="@string/icySnow"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/icySnow"
+            android:text="@string/transportDesc"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/busRoutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/description"
+            android:text="@string/busRoutes"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</FrameLayout>
