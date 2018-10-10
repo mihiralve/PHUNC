@@ -103,8 +103,8 @@ public class Announcements extends Fragment {
         });
 
         announcements.loadUrl("http://punc.psiada.org/app-updates/");
-        ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.phunc_v_logo);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/02/PUNC-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
+        ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.conf_logo);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo-.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
 
 //        ImageView sponsorRight = (ImageView)rootView.findViewById(R.id.sponsorRight);
 //        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorRight);

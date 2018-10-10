@@ -21,24 +21,25 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Welcome to PUNC XI!"
+                android:text="Welcome to PHUNC VI!"
                 android:textSize="30sp" />
 
             <ImageView
-                android:id="@+id/phunc_v_logo"
+                android:id="@+id/conf_logo"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_margin="10dp"
                 android:layout_below="@id/frag_announcements"
                  />
 
             <TextView
-                android:id="@+id/phunc_v_text"
+                android:id="@+id/theme_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/phunc_v_logo"
+                android:layout_below="@id/conf_logo"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:text="Eye of the Storm"
+                android:text="A Timeline of Exploration"
                 android:textSize="20sp"
                 android:textStyle="italic"/>
 
@@ -46,7 +47,7 @@
                 android:id="@+id/heading_announcements"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/phunc_v_text"
+                android:layout_below="@id/theme_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
