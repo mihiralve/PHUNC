@@ -710,8 +710,10 @@
     </string>
 
     <string name="transportDesc">
-        Uber and Lyft can be used to get around campus. The Penn State Cata Busses are also a
-        free option, and the Blue Loop (BL) and White Loop (WL) can be used to  get around campus and downton.
+        Uber and Lyft can be used to get around campus.
+        \nThe Penn State Cata Buses are also a
+        free option, and the Blue Loop (BL) and White Loop (WL) can be used to  get around campus and downtown.
+        Only the Blue Loop, White Loop, Red Link, and Green Link are free. All other buses require payment in exact change.
     </string>
 
     <string name="busRoutes">
