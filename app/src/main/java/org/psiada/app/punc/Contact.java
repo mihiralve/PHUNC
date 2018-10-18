@@ -72,13 +72,16 @@ public class Contact extends Fragment {
         final View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
 
         ImageView contact1 = (ImageView)rootView.findViewById(R.id.contact1_headshot);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2017/10/IMG_1149.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact1);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/fullsizeoutput_145e-1.jpeg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact1);
 
         ImageView contact2 = (ImageView)rootView.findViewById(R.id.contact2_headshot);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2017/10/IMG_1132.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact2);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2944-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact2);
 
         ImageView contact3 = (ImageView)rootView.findViewById(R.id.contact3_headshot);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2017/10/IMG_1221.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact3);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2969-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact3);
+
+        ImageView contact4 = (ImageView)rootView.findViewById(R.id.contact4_headshot);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2952-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact4);
 
         return rootView;
 
