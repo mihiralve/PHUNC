@@ -71,7 +71,7 @@ public class Schedule extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_schedule, container, false);
 
         ImageView schedule = (ImageView) rootView.findViewById(R.id.schedule);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(schedule);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(schedule);
 
 
 
