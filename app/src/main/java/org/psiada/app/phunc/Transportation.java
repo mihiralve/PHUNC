@@ -4,11 +4,20 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.CircularProgressDrawable;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
 
 
 /**
@@ -68,25 +77,39 @@ public class Transportation extends Fragment {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_transportation, container, false);
 
-        TextView business = (TextView)rootView.findViewById(R.id.business);
-        business.setClickable(true);
-        business.setMovementMethod(LinkMovementMethod.getInstance());
+        TouchImageView campusMap = (TouchImageView) rootView.findViewById(R.id.campusMap);
+        final ProgressBar progressBar = new ProgressBar(getContext());
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/campus-map.jpg").listener(new RequestListener<String, GlideDrawable>() {
+            @Override
+            public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
+                progressBar.setVisibility(View.GONE);
+                return false;
+            }
+
+            @Override
+            public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
+                progressBar.setVisibility(View.GONE);
+                return false;
+            }
+        }).diskCacheStrategy(DiskCacheStrategy.ALL).into(campusMap);
+
+        TextView willard = (TextView)rootView.findViewById(R.id.willard);
+        willard.setClickable(true);
+        willard.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView atherton = (TextView)rootView.findViewById(R.id.atherton);
         atherton.setClickable(true);
         atherton.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView goldenWok = (TextView)rootView.findViewById(R.id.goldenWok);
-        goldenWok.setClickable(true);
-        goldenWok.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView sparks = (TextView)rootView.findViewById(R.id.sparks);
+        sparks.setClickable(true);
+        sparks.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView icySnow = (TextView)rootView.findViewById(R.id.icySnow);
-        icySnow.setClickable(true);
-        icySnow.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView bbh = (TextView)rootView.findViewById(R.id.bbh);
+        bbh.setClickable(true);
+        bbh.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView busRoutes = (TextView)rootView.findViewById(R.id.busRoutes);
-        busRoutes.setClickable(true);
-        busRoutes.setMovementMethod(LinkMovementMethod.getInstance());
+
 
         return rootView;
     }
