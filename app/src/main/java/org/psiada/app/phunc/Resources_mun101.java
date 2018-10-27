@@ -1,8 +1,9 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,12 +14,12 @@ import android.webkit.WebViewClient;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Resources_Scheme.OnFragmentInteractionListener} interface
+ * {@link Resources_mun101.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Resources_Scheme#newInstance} factory method to
+ * Use the {@link Resources_mun101#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Resources_Scheme extends Fragment {
+public class Resources_mun101 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +31,7 @@ public class Resources_Scheme extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Resources_Scheme() {
+    public Resources_mun101() {
         // Required empty public constructor
     }
 
@@ -40,11 +41,11 @@ public class Resources_Scheme extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Resources_Scheme.
+     * @return A new instance of fragment Resources_mun101.
      */
     // TODO: Rename and change types and number of parameters
-    public static Resources_Scheme newInstance(String param1, String param2) {
-        Resources_Scheme fragment = new Resources_Scheme();
+    public static Resources_mun101 newInstance(String param1, String param2) {
+        Resources_mun101 fragment = new Resources_mun101();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,27 +60,34 @@ public class Resources_Scheme extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_resources__scheme, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_resources_mun101, container, false);
 
-        WebView eventScheme = (WebView) rootView.findViewById(R.id.eventSchemePacket);
-        eventScheme.getSettings().setJavaScriptEnabled(true);
-        eventScheme.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Away-Conference-Debate-Scheme-of-Events.pdf");
-        eventScheme.setWebViewClient(new WebViewClient(){
+        WebView mun101 = (WebView) rootView.findViewById(R.id.mun101packet);
+        mun101.getSettings().setJavaScriptEnabled(true);
+        mun101.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/MUN-101.pdf");
+        mun101.setWebViewClient(new WebViewClient(){
 
             public void onPageFinished(WebView view, String url){
-                rootView.findViewById(R.id.scheme_loading).setVisibility(View.GONE);
-                rootView.findViewById(R.id.eventSchemePacket).setVisibility(View.VISIBLE);
+                rootView.findViewById(R.id.mun101packet).setVisibility(View.VISIBLE);
+                rootView.findViewById(R.id.mun101_loading).setVisibility(View.GONE);
 
             }
         });
 
         return rootView;
+    }
+
+    public void onBackPressed()
+    {
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        fm.popBackStack();
     }
 
     // TODO: Rename method, update argument and hook method into UI event

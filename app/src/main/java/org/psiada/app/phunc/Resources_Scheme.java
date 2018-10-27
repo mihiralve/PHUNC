@@ -1,6 +1,5 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,12 +13,12 @@ import android.webkit.WebViewClient;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Resources_guide.OnFragmentInteractionListener} interface
+ * {@link Resources_Scheme.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Resources_guide#newInstance} factory method to
+ * Use the {@link Resources_Scheme#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Resources_guide extends Fragment {
+public class Resources_Scheme extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +30,7 @@ public class Resources_guide extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Resources_guide() {
+    public Resources_Scheme() {
         // Required empty public constructor
     }
 
@@ -41,11 +40,11 @@ public class Resources_guide extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Resources_guide.
+     * @return A new instance of fragment Resources_Scheme.
      */
     // TODO: Rename and change types and number of parameters
-    public static Resources_guide newInstance(String param1, String param2) {
-        Resources_guide fragment = new Resources_guide();
+    public static Resources_Scheme newInstance(String param1, String param2) {
+        Resources_Scheme fragment = new Resources_Scheme();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,16 +65,16 @@ public class Resources_guide extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_resources_guide, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_resources__scheme, container, false);
 
-        WebView crisis101 = (WebView) rootView.findViewById(R.id.conferenceguide);
-        crisis101.getSettings().setJavaScriptEnabled(true);
-        crisis101.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://punc.psiada.org/wp-content/uploads/2018/03/PUNC-XI-Conference-Guide.pdf");
-        crisis101.setWebViewClient(new WebViewClient(){
+        WebView eventScheme = (WebView) rootView.findViewById(R.id.eventSchemePacket);
+        eventScheme.getSettings().setJavaScriptEnabled(true);
+        eventScheme.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Away-Conference-Debate-Scheme-of-Events.pdf");
+        eventScheme.setWebViewClient(new WebViewClient(){
 
             public void onPageFinished(WebView view, String url){
-                rootView.findViewById(R.id.guide_loading).setVisibility(View.GONE);
-                rootView.findViewById(R.id.conferenceguide).setVisibility(View.VISIBLE);
+                rootView.findViewById(R.id.scheme_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.eventSchemePacket).setVisibility(View.VISIBLE);
 
             }
         });
@@ -90,6 +89,7 @@ public class Resources_guide extends Fragment {
         }
     }
 
+    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -100,6 +100,7 @@ public class Resources_guide extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+    */
 
     @Override
     public void onDetach() {

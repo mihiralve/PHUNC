@@ -1,4 +1,4 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
 import android.content.Context;
 import android.net.Uri;
@@ -16,12 +16,12 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Rooms.OnFragmentInteractionListener} interface
+ * {@link Merchandise.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Rooms#newInstance} factory method to
+ * Use the {@link Merchandise#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Rooms extends Fragment {
+public class Merchandise extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +33,7 @@ public class Rooms extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Rooms() {
+    public Merchandise() {
         // Required empty public constructor
     }
 
@@ -43,11 +43,11 @@ public class Rooms extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Rooms.
+     * @return A new instance of fragment Merchandise.
      */
     // TODO: Rename and change types and number of parameters
-    public static Rooms newInstance(String param1, String param2) {
-        Rooms fragment = new Rooms();
+    public static Merchandise newInstance(String param1, String param2) {
+        Merchandise fragment = new Merchandise();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,19 +68,18 @@ public class Rooms extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_rooms, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_merchandise, container, false);
 
-//        TextView rooms = (TextView) rootView.findViewById(R.id.roomAssignments);
-//        rooms.setClickable(true);
-//        rooms.setMovementMethod(LinkMovementMethod.getInstance());
+        ImageView merch1 = (ImageView)rootView.findViewById(R.id.merch1);
+        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch1);
 
-        ImageView rooms = (ImageView) rootView.findViewById(R.id.rooms);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(rooms);
+        ImageView merch2 = (ImageView)rootView.findViewById(R.id.merch2);
+        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/phone-wallet.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch2);
+
+        ImageView merch3 = (ImageView)rootView.findViewById(R.id.merch3);
+        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch3);
 
 
-
-
-        // Inflate the layout for this fragment
         return rootView;
     }
 

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.psiada.app.punc.Resources_passing_defeating">
+    tools:context="org.psiada.app.phunc.Resources_passing_defeating">
 
     <!-- TODO: Update blank fragment layout -->
     <WebView

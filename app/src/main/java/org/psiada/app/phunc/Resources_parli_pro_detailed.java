@@ -1,25 +1,24 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Transportation.OnFragmentInteractionListener} interface
+ * {@link Resources_parli_pro_detailed.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Transportation#newInstance} factory method to
+ * Use the {@link Resources_parli_pro_detailed#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Transportation extends Fragment {
+public class Resources_parli_pro_detailed extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +30,7 @@ public class Transportation extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Transportation() {
+    public Resources_parli_pro_detailed() {
         // Required empty public constructor
     }
 
@@ -41,11 +40,11 @@ public class Transportation extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Transportation.
+     * @return A new instance of fragment Resources_parli_pro_detailed.
      */
     // TODO: Rename and change types and number of parameters
-    public static Transportation newInstance(String param1, String param2) {
-        Transportation fragment = new Transportation();
+    public static Resources_parli_pro_detailed newInstance(String param1, String param2) {
+        Resources_parli_pro_detailed fragment = new Resources_parli_pro_detailed();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,27 +65,19 @@ public class Transportation extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_transportation, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_resources_parli_pro_detailed, container, false);
 
-        TextView business = (TextView)rootView.findViewById(R.id.business);
-        business.setClickable(true);
-        business.setMovementMethod(LinkMovementMethod.getInstance());
+        WebView parliProDetailed = (WebView) rootView.findViewById(R.id.detailedParliProPacket);
+        parliProDetailed.getSettings().setJavaScriptEnabled(true);
+        parliProDetailed.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Rules-of-Procedure-PUNC-2008.pdf");
+        parliProDetailed.setWebViewClient(new WebViewClient(){
 
-        TextView atherton = (TextView)rootView.findViewById(R.id.atherton);
-        atherton.setClickable(true);
-        atherton.setMovementMethod(LinkMovementMethod.getInstance());
+            public void onPageFinished(WebView view, String url){
+                rootView.findViewById(R.id.detailedParliPro_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.detailedParliProPacket).setVisibility(View.VISIBLE);
 
-        TextView goldenWok = (TextView)rootView.findViewById(R.id.goldenWok);
-        goldenWok.setClickable(true);
-        goldenWok.setMovementMethod(LinkMovementMethod.getInstance());
-
-        TextView icySnow = (TextView)rootView.findViewById(R.id.icySnow);
-        icySnow.setClickable(true);
-        icySnow.setMovementMethod(LinkMovementMethod.getInstance());
-
-        TextView busRoutes = (TextView)rootView.findViewById(R.id.busRoutes);
-        busRoutes.setClickable(true);
-        busRoutes.setMovementMethod(LinkMovementMethod.getInstance());
+            }
+        });
 
         return rootView;
     }
@@ -98,6 +89,7 @@ public class Transportation extends Fragment {
         }
     }
 
+    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -108,6 +100,7 @@ public class Transportation extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+    */
 
     @Override
     public void onDetach() {

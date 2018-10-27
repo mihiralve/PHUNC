@@ -1,24 +1,27 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Resources_parli_pro.OnFragmentInteractionListener} interface
+ * {@link Rooms.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Resources_parli_pro#newInstance} factory method to
+ * Use the {@link Rooms#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Resources_parli_pro extends Fragment {
+public class Rooms extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +33,7 @@ public class Resources_parli_pro extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Resources_parli_pro() {
+    public Rooms() {
         // Required empty public constructor
     }
 
@@ -40,11 +43,11 @@ public class Resources_parli_pro extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Resources_parli_pro.
+     * @return A new instance of fragment Rooms.
      */
     // TODO: Rename and change types and number of parameters
-    public static Resources_parli_pro newInstance(String param1, String param2) {
-        Resources_parli_pro fragment = new Resources_parli_pro();
+    public static Rooms newInstance(String param1, String param2) {
+        Rooms fragment = new Rooms();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,21 +68,20 @@ public class Resources_parli_pro extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_resources_parli_pro, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_rooms, container, false);
 
-        WebView parliPro = (WebView) rootView.findViewById(R.id.parlipropacket);
-        parliPro.getSettings().setJavaScriptEnabled(true);
-        parliPro.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Parliamentary-Procedure.pdf");
-        parliPro.setWebViewClient(new WebViewClient(){
+//        TextView rooms = (TextView) rootView.findViewById(R.id.roomAssignments);
+//        rooms.setClickable(true);
+//        rooms.setMovementMethod(LinkMovementMethod.getInstance());
 
-            public void onPageFinished(WebView view, String url){
-                rootView.findViewById(R.id.parliPro_loading).setVisibility(View.GONE);
-                rootView.findViewById(R.id.parlipropacket).setVisibility(View.VISIBLE);
+        ImageView rooms = (ImageView) rootView.findViewById(R.id.rooms);
+        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(rooms);
 
-            }
-        });
+
+
+
+        // Inflate the layout for this fragment
         return rootView;
-
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -89,7 +91,6 @@ public class Resources_parli_pro extends Fragment {
         }
     }
 
-    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -100,7 +101,6 @@ public class Resources_parli_pro extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
-    */
 
     @Override
     public void onDetach() {

@@ -1,4 +1,4 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,21 +7,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-
-
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Feedback.OnFragmentInteractionListener} interface
+ * {@link Charity.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Feedback#newInstance} factory method to
+ * Use the {@link Charity#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Feedback extends Fragment {
+public class Charity extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +29,7 @@ public class Feedback extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Feedback() {
+    public Charity() {
         // Required empty public constructor
     }
 
@@ -43,11 +39,11 @@ public class Feedback extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Feedback.
+     * @return A new instance of fragment Charity.
      */
     // TODO: Rename and change types and number of parameters
-    public static Feedback newInstance(String param1, String param2) {
-        Feedback fragment = new Feedback();
+    public static Charity newInstance(String param1, String param2) {
+        Charity fragment = new Charity();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,22 +64,7 @@ public class Feedback extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_feedback, container, false);
-
-        WebView feedbackForm = (WebView) rootView.findViewById(R.id.feedbackForm);
-        feedbackForm.getSettings().setJavaScriptEnabled(true);
-        feedbackForm.setWebViewClient(new WebViewClient(){
-
-            public void onPageFinished(WebView view, String url){
-                rootView.findViewById(R.id.feedbackForm).setVisibility(View.VISIBLE);
-                rootView.findViewById(R.id.feedback_loading).setVisibility(View.GONE);
-
-            }
-        });
-
-        feedbackForm.loadUrl("https://goo.gl/forms/5tTrbHlnGVXimTnA2");
-
-        return rootView;
+        return inflater.inflate(R.layout.fragment_charity, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

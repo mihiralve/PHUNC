@@ -1,27 +1,25 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Contact.OnFragmentInteractionListener} interface
+ * {@link Transportation.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Contact#newInstance} factory method to
+ * Use the {@link Transportation#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Contact extends Fragment {
+public class Transportation extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +31,7 @@ public class Contact extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Contact() {
+    public Transportation() {
         // Required empty public constructor
     }
 
@@ -43,11 +41,11 @@ public class Contact extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Contact.
+     * @return A new instance of fragment Transportation.
      */
     // TODO: Rename and change types and number of parameters
-    public static Contact newInstance(String param1, String param2) {
-        Contact fragment = new Contact();
+    public static Transportation newInstance(String param1, String param2) {
+        Transportation fragment = new Transportation();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,23 +66,29 @@ public class Contact extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View rootView =  inflater.inflate(R.layout.fragment_transportation, container, false);
 
-        final View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
+        TextView business = (TextView)rootView.findViewById(R.id.business);
+        business.setClickable(true);
+        business.setMovementMethod(LinkMovementMethod.getInstance());
 
-        ImageView contact1 = (ImageView)rootView.findViewById(R.id.contact1_headshot);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/fullsizeoutput_145e-1.jpeg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact1);
+        TextView atherton = (TextView)rootView.findViewById(R.id.atherton);
+        atherton.setClickable(true);
+        atherton.setMovementMethod(LinkMovementMethod.getInstance());
 
-        ImageView contact2 = (ImageView)rootView.findViewById(R.id.contact2_headshot);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2944-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact2);
+        TextView goldenWok = (TextView)rootView.findViewById(R.id.goldenWok);
+        goldenWok.setClickable(true);
+        goldenWok.setMovementMethod(LinkMovementMethod.getInstance());
 
-        ImageView contact3 = (ImageView)rootView.findViewById(R.id.contact3_headshot);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2969-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact3);
+        TextView icySnow = (TextView)rootView.findViewById(R.id.icySnow);
+        icySnow.setClickable(true);
+        icySnow.setMovementMethod(LinkMovementMethod.getInstance());
 
-        ImageView contact4 = (ImageView)rootView.findViewById(R.id.contact4_headshot);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2952-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact4);
+        TextView busRoutes = (TextView)rootView.findViewById(R.id.busRoutes);
+        busRoutes.setClickable(true);
+        busRoutes.setMovementMethod(LinkMovementMethod.getInstance());
 
         return rootView;
-
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -1,9 +1,11 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +14,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Charity.OnFragmentInteractionListener} interface
+ * {@link weekend_schedule.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Charity#newInstance} factory method to
+ * Use the {@link weekend_schedule#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Charity extends Fragment {
+public class weekend_schedule extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +31,7 @@ public class Charity extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Charity() {
+    public weekend_schedule() {
         // Required empty public constructor
     }
 
@@ -39,11 +41,11 @@ public class Charity extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Charity.
+     * @return A new instance of fragment weekend_schedule.
      */
     // TODO: Rename and change types and number of parameters
-    public static Charity newInstance(String param1, String param2) {
-        Charity fragment = new Charity();
+    public static weekend_schedule newInstance(String param1, String param2) {
+        weekend_schedule fragment = new weekend_schedule();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,8 +65,27 @@ public class Charity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View rootView = inflater.inflate(R.layout.fragment_weekend_schedule, container, false);
+
+        ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.ScheduleViewpager);
+        setupViewPager(viewPager);
+
+        TabLayout tabLayout = (TabLayout) rootView.findViewById(R.id.ScheduleTabs);
+        tabLayout.setupWithViewPager(viewPager);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_charity, container, false);
+        return rootView;
+    }
+
+    private void setupViewPager(ViewPager viewpager){
+
+        Guides.Adapter adapter = new Guides.Adapter(getChildFragmentManager());
+
+        adapter.addFragment(new Schedule(), "Schedule");
+        adapter.addFragment(new Rooms(), "Rooms");
+        viewpager.setAdapter(adapter);
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

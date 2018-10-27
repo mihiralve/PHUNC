@@ -1,24 +1,27 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Resources_parli_pro_detailed.OnFragmentInteractionListener} interface
+ * {@link Contact.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Resources_parli_pro_detailed#newInstance} factory method to
+ * Use the {@link Contact#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Resources_parli_pro_detailed extends Fragment {
+public class Contact extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +33,7 @@ public class Resources_parli_pro_detailed extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Resources_parli_pro_detailed() {
+    public Contact() {
         // Required empty public constructor
     }
 
@@ -40,11 +43,11 @@ public class Resources_parli_pro_detailed extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Resources_parli_pro_detailed.
+     * @return A new instance of fragment Contact.
      */
     // TODO: Rename and change types and number of parameters
-    public static Resources_parli_pro_detailed newInstance(String param1, String param2) {
-        Resources_parli_pro_detailed fragment = new Resources_parli_pro_detailed();
+    public static Contact newInstance(String param1, String param2) {
+        Contact fragment = new Contact();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,21 +68,23 @@ public class Resources_parli_pro_detailed extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_resources_parli_pro_detailed, container, false);
 
-        WebView parliProDetailed = (WebView) rootView.findViewById(R.id.detailedParliProPacket);
-        parliProDetailed.getSettings().setJavaScriptEnabled(true);
-        parliProDetailed.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Rules-of-Procedure-PUNC-2008.pdf");
-        parliProDetailed.setWebViewClient(new WebViewClient(){
+        final View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
 
-            public void onPageFinished(WebView view, String url){
-                rootView.findViewById(R.id.detailedParliPro_loading).setVisibility(View.GONE);
-                rootView.findViewById(R.id.detailedParliProPacket).setVisibility(View.VISIBLE);
+        ImageView contact1 = (ImageView)rootView.findViewById(R.id.contact1_headshot);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/fullsizeoutput_145e-1.jpeg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact1);
 
-            }
-        });
+        ImageView contact2 = (ImageView)rootView.findViewById(R.id.contact2_headshot);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2944-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact2);
+
+        ImageView contact3 = (ImageView)rootView.findViewById(R.id.contact3_headshot);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2969-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact3);
+
+        ImageView contact4 = (ImageView)rootView.findViewById(R.id.contact4_headshot);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2952-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(contact4);
 
         return rootView;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -89,7 +94,6 @@ public class Resources_parli_pro_detailed extends Fragment {
         }
     }
 
-    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -100,7 +104,6 @@ public class Resources_parli_pro_detailed extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
-    */
 
     @Override
     public void onDetach() {

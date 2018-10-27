@@ -1,27 +1,24 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Schedule.OnFragmentInteractionListener} interface
+ * {@link Resources_parli_pro.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Schedule#newInstance} factory method to
+ * Use the {@link Resources_parli_pro#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Schedule extends Fragment {
+public class Resources_parli_pro extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +30,7 @@ public class Schedule extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Schedule() {
+    public Resources_parli_pro() {
         // Required empty public constructor
     }
 
@@ -43,11 +40,11 @@ public class Schedule extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Schedule.
+     * @return A new instance of fragment Resources_parli_pro.
      */
     // TODO: Rename and change types and number of parameters
-    public static Schedule newInstance(String param1, String param2) {
-        Schedule fragment = new Schedule();
+    public static Resources_parli_pro newInstance(String param1, String param2) {
+        Resources_parli_pro fragment = new Resources_parli_pro();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,16 +65,21 @@ public class Schedule extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_schedule, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_resources_parli_pro, container, false);
 
-        ImageView schedule = (ImageView) rootView.findViewById(R.id.schedule);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(schedule);
+        WebView parliPro = (WebView) rootView.findViewById(R.id.parlipropacket);
+        parliPro.getSettings().setJavaScriptEnabled(true);
+        parliPro.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Parliamentary-Procedure.pdf");
+        parliPro.setWebViewClient(new WebViewClient(){
 
+            public void onPageFinished(WebView view, String url){
+                rootView.findViewById(R.id.parliPro_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.parlipropacket).setVisibility(View.VISIBLE);
 
-
-
-        // Inflate the layout for this fragment
+            }
+        });
         return rootView;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -87,6 +89,7 @@ public class Schedule extends Fragment {
         }
     }
 
+    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -97,6 +100,7 @@ public class Schedule extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+    */
 
     @Override
     public void onDetach() {

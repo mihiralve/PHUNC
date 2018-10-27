@@ -1,27 +1,24 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Merchandise.OnFragmentInteractionListener} interface
+ * {@link Resources_passing_defeating.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Merchandise#newInstance} factory method to
+ * Use the {@link Resources_passing_defeating#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Merchandise extends Fragment {
+public class Resources_passing_defeating extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +30,7 @@ public class Merchandise extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Merchandise() {
+    public Resources_passing_defeating() {
         // Required empty public constructor
     }
 
@@ -43,11 +40,11 @@ public class Merchandise extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Merchandise.
+     * @return A new instance of fragment Resources_passing_defeating.
      */
     // TODO: Rename and change types and number of parameters
-    public static Merchandise newInstance(String param1, String param2) {
-        Merchandise fragment = new Merchandise();
+    public static Resources_passing_defeating newInstance(String param1, String param2) {
+        Resources_passing_defeating fragment = new Resources_passing_defeating();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,17 +65,19 @@ public class Merchandise extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_merchandise, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_resources_passing_defeating, container, false);
 
-        ImageView merch1 = (ImageView)rootView.findViewById(R.id.merch1);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch1);
+        WebView passingDefeating = (WebView) rootView.findViewById(R.id.passingDefeatingPacket);
+        passingDefeating.getSettings().setJavaScriptEnabled(true);
+        passingDefeating.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Passing-and-Defeating-Motions.pdf");
+        passingDefeating.setWebViewClient(new WebViewClient(){
 
-        ImageView merch2 = (ImageView)rootView.findViewById(R.id.merch2);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/phone-wallet.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch2);
+            public void onPageFinished(WebView view, String url){
+                rootView.findViewById(R.id.passing_defeating_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.passingDefeatingPacket).setVisibility(View.VISIBLE);
 
-        ImageView merch3 = (ImageView)rootView.findViewById(R.id.merch3);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch3);
-
+            }
+        });
 
         return rootView;
     }
@@ -90,6 +89,7 @@ public class Merchandise extends Fragment {
         }
     }
 
+    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -100,6 +100,7 @@ public class Merchandise extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+    */
 
     @Override
     public void onDetach() {

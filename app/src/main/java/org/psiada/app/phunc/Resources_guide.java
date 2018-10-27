@@ -1,5 +1,6 @@
-package org.psiada.app.punc;
+package org.psiada.app.phunc;
 
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,12 +14,12 @@ import android.webkit.WebViewClient;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Resouces_directive101.OnFragmentInteractionListener} interface
+ * {@link Resources_guide.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Resouces_directive101#newInstance} factory method to
+ * Use the {@link Resources_guide#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Resouces_directive101 extends Fragment {
+public class Resources_guide extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +31,7 @@ public class Resouces_directive101 extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Resouces_directive101() {
+    public Resources_guide() {
         // Required empty public constructor
     }
 
@@ -40,11 +41,11 @@ public class Resouces_directive101 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Resouces_directive101.
+     * @return A new instance of fragment Resources_guide.
      */
     // TODO: Rename and change types and number of parameters
-    public static Resouces_directive101 newInstance(String param1, String param2) {
-        Resouces_directive101 fragment = new Resouces_directive101();
+    public static Resources_guide newInstance(String param1, String param2) {
+        Resources_guide fragment = new Resources_guide();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,20 +66,20 @@ public class Resouces_directive101 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_resouces_directive101, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_resources_guide, container, false);
 
-        WebView directive101 = (WebView) rootView.findViewById(R.id.directive101packet);
-        directive101.getSettings().setJavaScriptEnabled(true);
-        directive101.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Directive-Writing-101.pdf");
-
-        directive101.setWebViewClient(new WebViewClient(){
+        WebView crisis101 = (WebView) rootView.findViewById(R.id.conferenceguide);
+        crisis101.getSettings().setJavaScriptEnabled(true);
+        crisis101.loadUrl("https://docs.google.com/viewer?embedded=true&url=http://punc.psiada.org/wp-content/uploads/2018/03/PUNC-XI-Conference-Guide.pdf");
+        crisis101.setWebViewClient(new WebViewClient(){
 
             public void onPageFinished(WebView view, String url){
-                rootView.findViewById(R.id.directive101_loading).setVisibility(View.GONE);
-                rootView.findViewById(R.id.directive101packet).setVisibility(View.VISIBLE);
+                rootView.findViewById(R.id.guide_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.conferenceguide).setVisibility(View.VISIBLE);
 
             }
         });
+
         return rootView;
     }
 
@@ -89,7 +90,6 @@ public class Resouces_directive101 extends Fragment {
         }
     }
 
-    /*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -100,7 +100,6 @@ public class Resouces_directive101 extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
-    */
 
     @Override
     public void onDetach() {
