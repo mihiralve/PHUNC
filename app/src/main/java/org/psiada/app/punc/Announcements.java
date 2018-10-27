@@ -47,11 +47,16 @@ public class Announcements extends Fragment {
 
     private String[] images = {
 
-            "http://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png",
-            "http://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png",
-            "http://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg",
-            "http://punc.psiada.org/wp-content/uploads/2018/01/SIA-logo.png",
-            "http://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png"
+            "https://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/O_lSUAaA_400x400.jpg",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/c6IsO5zb_400x400.jpg",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/psu-agsciences-logo.png",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/German_Header_Responsive_stacked-2.png",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/logo_sia_retina.png",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/Responsive_siteheader.png",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/PSUIST.png",
+            "https://phunc.psiada.org/wp-content/uploads/2018/10/psu_bwo_rgb_2c_3x_1.png"
+
     };
 
 
@@ -102,7 +107,7 @@ public class Announcements extends Fragment {
             }
         });
 
-        announcements.loadUrl("http://punc.psiada.org/app-updates/");
+        announcements.loadUrl("http://phunc.psiada.org/app-announcements/");
         ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.conf_logo);
         Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo-.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
 
@@ -121,10 +126,10 @@ public class Announcements extends Fragment {
 
         update = new Runnable() {
             int currentPage = 0;
-            int NUM_PAGES = 5;
+            int NUM_PAGES = images.length;
 
             public void run() {
-                if (currentPage == NUM_PAGES - 1) {
+                if (currentPage == NUM_PAGES) {
                     currentPage = 0;
                 }
                 viewPager.setCurrentItem(currentPage++, true);
@@ -138,7 +143,7 @@ public class Announcements extends Fragment {
             public void run() {
                 handler.post(update);
             }
-        }, 400, 2000);
+        }, 500, 3000);
 
         return rootView;
     }
