@@ -36,7 +36,7 @@
              android:layout_below="@id/charity_divider"
              android:layout_margin="8dp"
              android:layout_marginTop="16dp"
-             android:text="Shot@Life"
+             android:text="She's the First"
              android:textSize="25sp"
              android:textStyle="bold"/>
         <TextView

@@ -35,7 +35,7 @@
                 <ImageView
                     android:id="@+id/merch1"
                     android:layout_width="200dp"
-                    android:layout_height="150dp"
+                    android:layout_height="250dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"/>
@@ -47,7 +47,7 @@
                     android:id="@+id/merch1_info"
                     android:layout_toRightOf="@id/merch1"
                     android:layout_marginLeft="10dp"
-                    android:text="Shot Glass"
+                    android:text="Pocket Tee"
                     android:textSize="18sp"/>
 
                 <TextView
@@ -58,7 +58,7 @@
                     android:layout_toRightOf="@id/merch1"
                     android:layout_below="@id/merch1_info"
                     android:layout_marginLeft="10dp"
-                    android:text="$3"
+                    android:text="$15"
                     android:textSize="18sp"/>
 
             </RelativeLayout>
@@ -75,7 +75,7 @@
                 <ImageView
                     android:id="@+id/merch2"
                     android:layout_width="200dp"
-                    android:layout_height="150dp"
+                    android:layout_height="250dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true" />
@@ -87,7 +87,7 @@
                     android:id="@+id/merch2_info"
                     android:layout_toRightOf="@id/merch2"
                     android:layout_marginLeft="10dp"
-                    android:text="Phone Wallet"
+                    android:text="Tee"
                     android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,7 +97,7 @@
                     android:layout_toRightOf="@id/merch2"
                     android:layout_below="@id/merch2_info"
                     android:layout_marginLeft="10dp"
-                    android:text="$3"
+                    android:text="$15"
                     android:textSize="18sp"/>
 
 
@@ -115,7 +115,7 @@
                 <ImageView
                     android:id="@+id/merch3"
                     android:layout_width="200dp"
-                    android:layout_height="150dp"
+                    android:layout_height="250dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true" />
@@ -127,92 +127,62 @@
                     android:id="@+id/merch3_info"
                     android:layout_toRightOf="@id/merch3"
                     android:layout_marginLeft="10dp"
-                    android:text="Bottle Opener"
+                    android:text="Back (Tee)"
                     android:textSize="18sp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/merch3_price"
-                    android:layout_toRightOf="@id/merch3"
-                    android:layout_below="@id/merch3_info"
-                    android:layout_marginLeft="10dp"
-                    android:text="$3"
-                    android:autoLink="email"
-                    android:textSize="18sp"/>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:id="@+id/merch3_price"-->
+                    <!--android:layout_toRightOf="@id/merch3"-->
+                    <!--android:layout_below="@id/merch3_info"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:autoLink="email"-->
+                    <!--android:textSize="18sp"/>-->
 
 
             </RelativeLayout>
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/merchandise3"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:layout_margin="8dp"
-                android:text="@string/merchDesc"
+                android:layout_margin="10dp"
+                android:id="@+id/merchandise4">
+
+                <ImageView
+                    android:id="@+id/merch4"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch4_info"
+                    android:layout_toRightOf="@id/merch4"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sticker"
+                    android:textSize="18sp"/>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/merch4_price"
+                android:layout_toRightOf="@id/merch4"
+                android:layout_below="@id/merch4_info"
+                android:layout_marginLeft="10dp"
+                android:text="$0.50"
+                android:autoLink="email"
                 android:textSize="18sp"/>
 
 
-            <!--ImageView
-                android:id="@+id/contact4_headshot"
-                android:layout_width="200dp"
-                android:layout_height="150dp"
-                android:layout_below="@id/contact3"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"/>-->
-
-            <!--<RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/contact3"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/contact4">
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/contact4_info"
-                    android:layout_toRightOf="@id/contact4_headshot"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/annaInfo"
-                    android:textSize="18sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/contact4_email"
-                    android:layout_toRightOf="@id/contact4_headshot"
-                    android:layout_below="@id/contact4_info"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/annaEmail"
-                    android:autoLink="email"
-                    android:textSize="15sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/contact4_phone"
-                    android:layout_toRightOf="@id/contact4_headshot"
-                    android:layout_below="@id/contact4_email"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/annaPhone"
-                    android:autoLink="phone"
-                    android:textSize="18sp"/>
-
-            </RelativeLayout>-->
-
+            </RelativeLayout>
 
         </RelativeLayout>
     </ScrollView>

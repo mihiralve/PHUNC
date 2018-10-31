@@ -75,7 +75,7 @@ public class Rooms extends Fragment {
 //        rooms.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView rooms = (ImageView) rootView.findViewById(R.id.rooms);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(rooms);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/Room-Assignments.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(rooms);
 
 
 

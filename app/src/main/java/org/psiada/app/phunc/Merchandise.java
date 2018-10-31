@@ -71,14 +71,16 @@ public class Merchandise extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_merchandise, container, false);
 
         ImageView merch1 = (ImageView)rootView.findViewById(R.id.merch1);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch1);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Pocket-Tee-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch1);
 
         ImageView merch2 = (ImageView)rootView.findViewById(R.id.merch2);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/phone-wallet.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch2);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch2);
 
         ImageView merch3 = (ImageView)rootView.findViewById(R.id.merch3);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(200, 150).into(merch3);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch3);
 
+        ImageView merch4 = (ImageView)rootView.findViewById(R.id.merch4);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo-.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch4);
 
         return rootView;
     }
