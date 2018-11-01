@@ -157,6 +157,13 @@ public class Coffee extends Fragment {
         ImageView cafeImage11 = (ImageView)rootView.findViewById(R.id.cafeImage11);
         Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2018/03/websters.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage11);
 
+        TextView cafe12 = (TextView)rootView.findViewById(R.id.cafe12);
+        cafe12.setClickable(true);
+        cafe12.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView cafeImage12 = (ImageView)rootView.findViewById(R.id.cafeImage12);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/duckdonutsFB.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(cafeImage12);
+
 
         return rootView;
     }

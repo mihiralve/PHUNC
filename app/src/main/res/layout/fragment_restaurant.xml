@@ -167,7 +167,7 @@
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
-            <!--android:src="@drawable/cozy_thai"-->
+
 
 
             <TextView
@@ -204,7 +204,7 @@
 
 
             <ImageView
-                android:id="@+id/menuImage5"
+                android:id="@+id/menuImage20"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="16dp"
@@ -212,6 +212,53 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_below="@id/ActualMenu4"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+
+            <TextView
+                android:id="@+id/menu20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menuImage20"
+                android:text="@string/menu20"
+                android:textSize="18sp"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/ActualMenu20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/menu20"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ActualMenu20"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/menuImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/ActualMenu20"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 

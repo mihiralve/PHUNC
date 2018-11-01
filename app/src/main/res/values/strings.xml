@@ -130,6 +130,13 @@
         </a>
     </string>
 
+    <string name="menu20">
+        <a href="https://goo.gl/maps/VG4RM5JQ3Ft">
+        <b>Snap Pizza</b> ($) <i>Pizza</i>
+        110 E College Ave
+        </a>
+    </string>
+
     <string name="menu5">
         <a href="https://goo.gl/maps/VSgmQsSmMiG2">
         <b>Irving’s Bagels</b> ($) <i>Bagels, Sandwiches</i>
@@ -250,6 +257,12 @@
 
     <string name="ActualMenu4">
         <a href="https://www.cozythaibistro.com/menu">
+        <b>Menu</b>
+        </a>
+    </string>
+
+    <string name="ActualMenu20">
+        <a href="https://www.snapcustompizza.com/location/state-college/">
         <b>Menu</b>
         </a>
     </string>
@@ -536,6 +549,13 @@
         <a href="https://goo.gl/maps/wNjCUdNPxAm">
         <b> Webster’s Bookstore Cafe</b>
         133 E Beaver Ave
+        </a>
+    </string>
+
+    <string name="cafe12">
+        <a href="https://goo.gl/maps/8LegtvWLsg12">
+        <b> Duck Donuts</b>
+        125 S Fraser St
         </a>
     </string>
 

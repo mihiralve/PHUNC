@@ -119,6 +119,16 @@ public class Restaurants extends Fragment {
         ImageView menuImage4 = (ImageView)rootView.findViewById(R.id.menuImage4);
         Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/cozy_thai.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage4);
 
+        TextView menu20 = (TextView)rootView.findViewById(R.id.menu20);
+        menu20.setClickable(true);
+        menu20.setMovementMethod(LinkMovementMethod.getInstance());
+
+        TextView ActualMenu20 = (TextView)rootView.findViewById(R.id.ActualMenu20);
+        ActualMenu20.setClickable(true);
+        ActualMenu20.setMovementMethod(LinkMovementMethod.getInstance());
+
+        ImageView menuImage20 = (ImageView)rootView.findViewById(R.id.menuImage20);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/snap.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage20);
 
         TextView menu5 = (TextView)rootView.findViewById(R.id.menu5);
         menu5.setClickable(true);
