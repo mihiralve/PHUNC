@@ -94,7 +94,7 @@ public class Guides extends Fragment {
 
         adapter.addFragment(new Restaurants(), "Food");
         adapter.addFragment(new Coffee(), "Coffee");
-        //adapter.addFragment(new Bars(), "Bars");
+        adapter.addFragment(new Bars(), "Bars");
         viewpager.setAdapter(adapter);
 
 
