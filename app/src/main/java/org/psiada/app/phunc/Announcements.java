@@ -1,4 +1,4 @@
-package org.psiada.app.phunc;
+package org.psiada.app.punc;
 
 import android.content.Context;
 import android.net.Uri;
@@ -47,15 +47,13 @@ public class Announcements extends Fragment {
 
     private String[] images = {
 
-            "https://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/O_lSUAaA_400x400.jpg",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/c6IsO5zb_400x400.jpg",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/psu-agsciences-logo.png",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/German_Header_Responsive_stacked-2.png",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/logo_sia_retina.png",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/Responsive_siteheader.png",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/PSUIST.png",
-            "https://phunc.psiada.org/wp-content/uploads/2018/10/psu_bwo_rgb_2c_3x_1.png"
+            "https://punc.psiada.org/wp-content/uploads/2019/03/Bush-logo.jpg",
+            "https://punc.psiada.org/wp-content/uploads/2019/03/Public-Policy-PSU-CLA_Roboto-font.png",
+            "https://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png",
+            "https://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png",
+            "https://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png",
+            "https://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg"
+
 
     };
 
@@ -111,11 +109,23 @@ public class Announcements extends Fragment {
         ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.conf_logo);
         Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2016/08/PUNC-Logo-Blue.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
 
-//        ImageView sponsorRight = (ImageView)rootView.findViewById(R.id.sponsorRight);
-//        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorRight);
+        ImageView sponsor1 = (ImageView)rootView.findViewById(R.id.sponsor1);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/Bush-logo.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor1);
 //
-//        ImageView sponsorLeft = (ImageView)rootView.findViewById(R.id.sponsorLeft);
-//        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsorLeft);
+        ImageView sponsor2 = (ImageView)rootView.findViewById(R.id.sponsor2);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/Public-Policy-PSU-CLA_Roboto-font.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor2);
+
+        ImageView sponsor3 = (ImageView)rootView.findViewById(R.id.sponsor3);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor3);
+//
+        ImageView sponsor4 = (ImageView)rootView.findViewById(R.id.sponsor4);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor4);
+
+        ImageView sponsor5 = (ImageView)rootView.findViewById(R.id.sponsor5);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor5);
+//
+        ImageView sponsor6 = (ImageView)rootView.findViewById(R.id.sponsor6);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor6);
 
         viewPager = (ViewPager)rootView.findViewById(R.id.sponsors);
         adapter = new ViewPagerAdapter(getActivity(), images);

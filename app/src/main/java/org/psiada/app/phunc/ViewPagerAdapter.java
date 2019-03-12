@@ -1,4 +1,4 @@
-package org.psiada.app.phunc;
+package org.psiada.app.punc;
 
 import android.app.Activity;
 import android.content.Context;

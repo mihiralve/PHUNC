@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PHUNC</string>
+    <string name="app_name">PUNC</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -49,55 +49,55 @@
     <string name="tabBars">Bars</string>
 
     <string name="sgInfo">
-        <b>Meghan McNicholas</b>
+        <b>Kayla Wendt</b>
         \n<i>Secretary General</i>
     </string>
 
     <string name="sgEmail">
-        sg.phunc@psiada.org
+        sg.punc@psiada.org
     </string>
 
     <string name="sgPhone">
-        484-832-9276
+        484-868-7195
     </string>
 
     <string name="cosInfo">
-        <b>Katie Bartuska</b>
+        <b>Mihir Alve</b>
         \n<i>Chief of Staff</i>
     </string>
 
     <string name="cosEmail">
-        cos.phunc@psiada.org
+        cos.punc@psiada.org
     </string>
 
     <string name="cosPhone">
-        570-709-9446
+        484-868-5778
     </string>
 
     <string name="usgInfo">
-        <b>Grace Eppinger</b>
+        <b>Allison Brown</b>
         \n<i>USG for Crisis and Committee Development</i>
     </string>
 
     <string name="usgEmail">
-        crisis.phunc@psiada.org
+        crisis.punc@psiada.org
     </string>
 
     <string name="usgPhone">
-        610-608-8467
+        610-291-7620
     </string>
 
     <string name="chargeInfo">
-        <b>Milan Liu</b>
+        <b>Tarrick Qahash</b>
         \n<i>Chargée d\'Affaires</i>
     </string>
 
     <string name="chargeEmail">
-        charge.phunc@psiada.org
+        charge.punc@psiada.org
     </string>
 
     <string name="chargePhone">
-        814-933-2989
+        215-622-1737
     </string>
 
 
