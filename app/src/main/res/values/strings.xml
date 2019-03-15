@@ -462,139 +462,165 @@
 
 
     <string name="cafe1">
-        <a href="https://goo.gl/maps/YeJapfc1aJ42">
-        <b> Abba Java Coffee House</b>
-        299 Locust Ln
+        <a href="https://goo.gl/maps/dGMk6o1vcHm">
+        <b> Saxbys</b>
+        Business Building, 210
         </a>
     </string>
 
-    <string name="cafe2a">
-        <a href="https://goo.gl/maps/UgbprziLYfG2">
-        <b>Au Bon Pain</b>
-        Kern Building
-        </a>
-    </string>
-
-    <string name="cafe2b">
-        <a href="https://goo.gl/maps/TSz2VhTWfKp">
-        <b>Au Bon Pain</b>
-        Information Sciences and Technology Buidling
-        </a>
-    </string>
-
-    <string name="cafe3">
-        <a href="https://goo.gl/maps/SD8VivhbwGE2">
-        <b> Cheese Shoppe</b>
-        234 E Calder Way
-        </a>
-    </string>
-
-    <string name="cafe4">
-        <a href="https://goo.gl/maps/WVVBSx95Zek">
-        <b> Dunkin Donuts</b>
-        200 W College Ave
-        </a>
-    </string>
-
-    <string name="cafe5">
-        <a href="https://goo.gl/maps/RHzwpDGCE7S2">
-        <b> Irving’s Bagels</b>
-        110 E College Ave
-        </a>
-    </string>
-
-    <string name="cafe6">
-        <a href="https://goo.gl/maps/Wg3YQ9JeU772">
-        <b> Panera Bread</b>
-        148 S Allen St
-        </a>
-    </string>
-
-    <string name="cafe7">
+    <string name="cafe2">
         <a href="https://goo.gl/maps/xiKUQJo3QnQ2">
         <b> Penn State Creamery</b>
         Food Science Building
         </a>
     </string>
 
-    <string name="cafe8">
-        <a href="https://goo.gl/maps/XnnntWPmTQm">
-        <b> Saint’s Cafe</b>
-        123 W Beaver Ave
-        </a>
-    </string>
-
-    <string name="cafe9">
-        <a href="https://goo.gl/maps/GLiDpFxjeMs">
-        <b> Sowers Harvest Café</b>
-        421 E Beaver Ave
-        </a>
-    </string>
-
-    <string name="cafe10a">
+    <string name="cafe3a">
         <a href="https://goo.gl/maps/z6CDyDQsQTF2">
         <b> Starbucks</b>
         HUB
         </a>
     </string>
 
-    <string name="cafe10b">
+    <string name="cafe3b">
         <a href="https://goo.gl/maps/Ks75XQwY1TD2">
         <b> Starbucks</b>
         232 W College Ave
         </a>
     </string>
 
-    <string name="cafe11">
-        <a href="https://goo.gl/maps/wNjCUdNPxAm">
-        <b> Webster’s Bookstore Cafe</b>
-        133 E Beaver Ave
+    <string name="cafe3c">
+        <a href="https://goo.gl/maps/ocg4f5PVvPB2">
+        <b> Starbucks</b>
+        E, 126 Paterno Library
         </a>
     </string>
 
-    <string name="cafe12">
+    <string name="cafe4a">
+        <a href="https://goo.gl/maps/UgbprziLYfG2">
+        <b>Au Bon Pain</b>
+        Kern Building
+        </a>
+    </string>
+
+    <string name="cafe4b">
+        <a href="https://goo.gl/maps/TSz2VhTWfKp">
+        <b>Au Bon Pain</b>
+        Information Sciences and Technology Buidling
+        </a>
+    </string>
+
+    <string name="cafe5">
+        <a href="https://goo.gl/maps/WVVBSx95Zek">
+        <b> Dunkin Donuts</b>
+        200 W College Ave
+        </a>
+    </string>
+
+    <string name="cafe6">
+        <a href="https://goo.gl/maps/RHzwpDGCE7S2">
+        <b> Irving’s Bagels</b>
+        110 E College Ave
+        </a>
+    </string>
+
+    <string name="cafe7">
+        <a href="https://goo.gl/maps/XnnntWPmTQm">
+        <b> Saint’s Cafe</b>
+        123 W Beaver Ave
+        </a>
+    </string>
+
+    <string name="cafe8">
         <a href="https://goo.gl/maps/8LegtvWLsg12">
         <b> Duck Donuts</b>
         125 S Fraser St
         </a>
     </string>
 
+    <string name="cafe9">
+        <a href="https://goo.gl/maps/Wg3YQ9JeU772">
+        <b> Panera Bread</b>
+        148 S Allen St
+        </a>
+    </string>
+
+    <string name="cafe10">
+        <a href="https://goo.gl/maps/wNjCUdNPxAm">
+        <b> Webster’s Bookstore Cafe</b>
+        133 E Beaver Ave
+        </a>
+    </string>
+
+    <string name="cafe11">
+        <a href="https://goo.gl/maps/GLiDpFxjeMs">
+        <b> Sowers Harvest Café</b>
+        421 E Beaver Ave
+        </a>
+    </string>
+
+    <string name="cafe12">
+        <a href="https://goo.gl/maps/YeJapfc1aJ42">
+        <b> Abba Java Coffee House</b>
+        299 Locust Ln
+        </a>
+    </string>
+
+    <string name="cafe13">
+        <a href="https://goo.gl/maps/SD8VivhbwGE2">
+        <b> Cheese Shoppe</b>
+        234 E Calder Way
+        </a>
+    </string>
 
     <string name="Coffee">
-        Abba Java Coffee House \n
-        299 Locust Ln \n\n
+        Saxbys \n
+        Business Building, 210 \n\n
 
-        Au Bon Pain\n
-        Kern Building\n
-        Information Sciences and Technology Buidling\n\n
+        Penn State Creamery \n
+        Food Science Building \n\n
 
-        Cheese Shoppe \n
-        234 E Calder Way \n\n
+        Starbucks \n
+        HUB \n\n
 
-        Dunkin Donuts\n
-        200 W College Ave\n\n
+        Starbucks \n
+        232 W College Ave \n\n
 
-        Irving’s Bagels\n
-        110 E College Ave\n\n
+        Starbucks \n
+        E, 126 Paterno Library \n\n
 
-        Panera Bread\n
-        148 S Allen St\n\n
+        Au Bon Pain \n
+        Kern Building \n\n
 
-        Penn State Creamery\n
-        Food Science Building\n\n
+        Au Bon Pain \n
+        Information Sciences and Technology Buidling \n\n
 
-        Saint’s Cafe\n
-        123 W Beaver Ave\n\n
+        Dunkin Donuts \n
+        200 W College Ave \n\n
+
+        Irving’s Bagels \n
+        110 E College Ave \n\n
+
+        Saint’s Cafe \n
+        123 W Beaver Ave \n\n
+
+        Duck Donuts \n
+        125 S Fraser St \n\n
+
+        Panera Bread \n
+        148 S Allen St \n\n
+
+        Webster’s Bookstore Cafe \n
+        133 E Beaver Ave \n\n
 
         Sowers Harvest Café \n
         421 E Beaver Ave \n\n
 
-        Starbucks\n
-        HUB\n
-        232 W College Ave\n\n
+        Abba Java Coffee House \n
+        299 Locust Ln \n\n
 
-        Webster’s Bookstore Cafe\n
-        133 E Beaver Ave\n\n
+        Cheese Shoppe \n
+        234 E Calder Way \n\n
 
 
     </string>

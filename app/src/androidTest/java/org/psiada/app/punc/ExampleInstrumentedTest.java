@@ -1,4 +1,4 @@
-package org.psiada.app.phunc;
+package org.psiada.app.punc;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

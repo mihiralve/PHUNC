@@ -55,7 +55,7 @@
                 android:scaleType="centerCrop"/>
 
             <TextView
-                android:id="@+id/cafe2a"
+                android:id="@+id/cafe2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -64,27 +64,12 @@
                 android:layout_marginBottom="8dp"
                 android:layout_below="@id/cafeImage2"
                 android:layout_centerHorizontal="true"
-                android:text="@string/cafe2a"
+                android:text="@string/cafe2"
                 android:textSize="18sp"
                 android:clickable="true"
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"
                 />
-            <TextView
-                android:id="@+id/cafe2b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="8dp"
-                android:layout_below="@id/cafe2a"
-                android:layout_centerHorizontal="true"
-                android:text="@string/cafe2b"
-                android:textSize="18sp"
-                android:clickable="true"
-                android:textColorLink="#2f4f4f"
-                android:textAlignment="center" />
 
 
             <ImageView
@@ -95,12 +80,12 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/cafe2b"
+                android:layout_below="@id/cafe2"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
             <TextView
-                android:id="@+id/cafe3"
+                android:id="@+id/cafe3a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -109,7 +94,39 @@
                 android:layout_marginBottom="8dp"
                 android:layout_below="@id/cafeImage3"
                 android:layout_centerHorizontal="true"
-                android:text="@string/cafe3"
+                android:text="@string/cafe3a"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/cafe3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafe3a"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe3b"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/cafe3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafe3b"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe3c"
                 android:textSize="18sp"
                 android:clickable="true"
                 android:textColorLink="#2f4f4f"
@@ -123,12 +140,12 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/cafe3"
+                android:layout_below="@id/cafe3c"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
             <TextView
-                android:id="@+id/cafe4"
+                android:id="@+id/cafe4a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -137,35 +154,23 @@
                 android:layout_marginBottom="8dp"
                 android:layout_below="@id/cafeImage4"
                 android:layout_centerHorizontal="true"
-                android:text="@string/cafe4"
+                android:text="@string/cafe4a"
                 android:textSize="18sp"
                 android:clickable="true"
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
-            <ImageView
-                android:id="@+id/cafeImage12"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_below="@id/cafe4"
-                android:layout_centerHorizontal="true"
-                android:scaleType="centerCrop"/>
-
             <TextView
-                android:id="@+id/cafe12"
+                android:id="@+id/cafe4b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
-                android:layout_below="@id/cafeImage12"
+                android:layout_below="@id/cafe4a"
                 android:layout_centerHorizontal="true"
-                android:text="@string/cafe12"
+                android:text="@string/cafe4b"
                 android:textSize="18sp"
                 android:clickable="true"
                 android:textColorLink="#2f4f4f"
@@ -179,7 +184,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/cafe12"
+                android:layout_below="@id/cafe4b"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -284,7 +289,6 @@
                 android:textAlignment="center"/>
 
 
-
             <ImageView
                 android:id="@+id/cafeImage9"
                 android:layout_width="match_parent"
@@ -326,7 +330,7 @@
                 android:scaleType="centerCrop"/>
 
             <TextView
-                android:id="@+id/cafe10a"
+                android:id="@+id/cafe10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -335,27 +339,12 @@
                 android:layout_marginBottom="8dp"
                 android:layout_below="@id/cafeImage10"
                 android:layout_centerHorizontal="true"
-                android:text="@string/cafe10a"
+                android:text="@string/cafe10"
                 android:textSize="18sp"
                 android:clickable="true"
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center"/>
 
-            <TextView
-                android:id="@+id/cafe10b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="8dp"
-                android:layout_below="@id/cafe10a"
-                android:layout_centerHorizontal="true"
-                android:text="@string/cafe10b"
-                android:textSize="18sp"
-                android:clickable="true"
-                android:textColorLink="#2f4f4f"
-                android:textAlignment="center" />
 
             <ImageView
                 android:id="@+id/cafeImage11"
@@ -365,7 +354,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_below="@id/cafe10b"
+                android:layout_below="@id/cafe10"
                 android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"/>
 
@@ -384,6 +373,63 @@
                 android:clickable="true"
                 android:textColorLink="#2f4f4f"
                 android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/cafeImage12"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe11"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage12"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe12"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/cafeImage13"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cafe12"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cafe13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/cafeImage13"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cafe13"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center" />
+
 
 
 
