@@ -79,8 +79,8 @@ public class Merchandise extends Fragment {
         ImageView merch3 = (ImageView)rootView.findViewById(R.id.merch3);
         Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch3);
 
-        ImageView merch4 = (ImageView)rootView.findViewById(R.id.merch4);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo-.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch4);
+        //ImageView merch4 = (ImageView)rootView.findViewById(R.id.merch4);
+        //Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo-.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch4);
 
         return rootView;
     }

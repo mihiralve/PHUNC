@@ -144,45 +144,7 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/merchandise3"
-                android:layout_margin="10dp"
-                android:id="@+id/merchandise4">
 
-                <ImageView
-                    android:id="@+id/merch4"
-                    android:layout_width="200dp"
-                    android:layout_height="250dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/merch4_info"
-                    android:layout_toRightOf="@id/merch4"
-                    android:layout_marginLeft="10dp"
-                    android:text="Sticker"
-                    android:textSize="18sp"/>
-
-                <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/merch4_price"
-                android:layout_toRightOf="@id/merch4"
-                android:layout_below="@id/merch4_info"
-                android:layout_marginLeft="10dp"
-                android:text="$0.50"
-                android:autoLink="email"
-                android:textSize="18sp"/>
-
-
-            </RelativeLayout>
 
         </RelativeLayout>
     </ScrollView>

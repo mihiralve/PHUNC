@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -68,14 +70,20 @@ public class Rooms extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_rooms, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_rooms, container, false);
 
-//        TextView rooms = (TextView) rootView.findViewById(R.id.roomAssignments);
-//        rooms.setClickable(true);
-//        rooms.setMovementMethod(LinkMovementMethod.getInstance());
+        WebView rooms = (WebView) rootView.findViewById(R.id.rooms);
+        rooms.getSettings().setJavaScriptEnabled(true);
+        rooms.loadUrl("https://punc.psiada.org/app-rooms/");
+        rooms.setWebViewClient(new WebViewClient(){
 
-        ImageView rooms = (ImageView) rootView.findViewById(R.id.rooms);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/Room-Assignments.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(rooms);
+            public void onPageFinished(WebView view, String url){
+                rootView.findViewById(R.id.rooms_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.rooms).setVisibility(View.VISIBLE);
+
+            }
+        });
+
 
 
 

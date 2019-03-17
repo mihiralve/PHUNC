@@ -7,23 +7,19 @@
 
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+    <WebView
+        android:id="@+id/schedule"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:id="@+id/schedule"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"/>
-
-
-
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/schedule_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:text="Loading..."
+        android:textSize="20dp"
+        android:visibility="visible"/>
 
 </FrameLayout>

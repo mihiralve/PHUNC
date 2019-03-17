@@ -107,25 +107,6 @@ public class Announcements extends Fragment {
 
         announcements.loadUrl("http://punc.psiada.org/app-announcements/");
         ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.conf_logo);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2016/08/PUNC-Logo-Blue.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
-
-        ImageView sponsor1 = (ImageView)rootView.findViewById(R.id.sponsor1);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/Bush-logo.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor1);
-//
-        ImageView sponsor2 = (ImageView)rootView.findViewById(R.id.sponsor2);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/Public-Policy-PSU-CLA_Roboto-font.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor2);
-
-        ImageView sponsor3 = (ImageView)rootView.findViewById(R.id.sponsor3);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor3);
-//
-        ImageView sponsor4 = (ImageView)rootView.findViewById(R.id.sponsor4);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor4);
-
-        ImageView sponsor5 = (ImageView)rootView.findViewById(R.id.sponsor5);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor5);
-//
-        ImageView sponsor6 = (ImageView)rootView.findViewById(R.id.sponsor6);
-        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(sponsor6);
 
         viewPager = (ViewPager)rootView.findViewById(R.id.sponsors);
         adapter = new ViewPagerAdapter(getActivity(), images);

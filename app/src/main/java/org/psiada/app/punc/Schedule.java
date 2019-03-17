@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -68,10 +70,20 @@ public class Schedule extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_schedule, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_schedule, container, false);
 
-        ImageView schedule = (ImageView) rootView.findViewById(R.id.schedule);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png").skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(schedule);
+        WebView schedule = (WebView) rootView.findViewById(R.id.schedule);
+        schedule.getSettings().setJavaScriptEnabled(true);
+        schedule.loadUrl("https://punc.psiada.org/app-schedule/");
+        schedule.setWebViewClient(new WebViewClient(){
+
+            public void onPageFinished(WebView view, String url){
+                rootView.findViewById(R.id.schedule_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.schedule).setVisibility(View.VISIBLE);
+
+            }
+        });
+
 
 
 

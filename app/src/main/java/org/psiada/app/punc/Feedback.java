@@ -81,7 +81,7 @@ public class Feedback extends Fragment {
             }
         });
 
-        feedbackForm.loadUrl("https://goo.gl/forms/5tTrbHlnGVXimTnA2");
+        feedbackForm.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSfrnjoaBSjY1W4euGAqiYHYvnM3d5K5ZIq4Q9Z1P8HFe8JS_Q/viewform");
 
         return rootView;
     }
