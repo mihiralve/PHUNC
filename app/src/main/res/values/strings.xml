@@ -626,116 +626,117 @@
     </string>
 
     <string name="bar1">
-    <a href="https://goo.gl/maps/z9ZB6rMtvjp">
-        <b>Cafe 210 West</b>
-        210 West College Ave
-    </a>
-    </string>
-
-    <string name="bar2">
-    <a href="https://goo.gl/maps/MKg1Qg1XLku">
-        <b>Champs Downtown</b>
-        139 S Allen St
-    </a>
-    </string>
-
-    <string name="bar3">
-    <a href="https://goo.gl/maps/kbzCJZW4uiK2">
-        <b>Indigo</b>
-        112 W College Ave
-    </a>
-    </string>
-
-    <string name="bar4">
-    <a href="https://goo.gl/maps/bvo4B7t9fEt">
-        <b>Inferno</b>
-        340 E College Ave
-    </a>
-    </string>
-
-    <string name="bar5">
-    <a href="https://goo.gl/maps/CymquCKZ8Vq">
-        <b>Liberty Craft House</b>
-        346 E College Ave
-    </a>
-    </string>
-
-    <string name="bar6">
-    <a href="https://goo.gl/maps/atYbHXMaMUC2">
-        <b>Local Whiskey</b>
-        107 E Beaver Ave
-    </a>
-    </string>
-
-    <string name="bar7">
-    <a href="https://goo.gl/maps/fSWoD53fqL22">
-        <b>Mad Mex</b>
-        240 S Pugh St
-    </a>
-    </string>
-
-    <string name="bar8">
-    <a href="https://goo.gl/maps/9JYP8VdSqoJ2">
-        <b>Phyrst</b>
-        111 E Beaver Ave
-    </a>
-    </string>
-
-    <string name="bar9">
-    <a href="https://goo.gl/maps/dSMZT1gFpVx">
-        <b>The Saloon</b>
-        101 Heister St
-    </a>
-    </string>
-
-    <string name="bar10">
-    <a href="https://goo.gl/maps/cCwYYFLm6So">
-        <b>The Shandygaff</b>
-        212 E College Ave
-    </a>
-    </string>
-
-    <string name="bar11">
     <a href="https://goo.gl/maps/S1noXdzb1PD2">
         <b>Zeno\'s Pub</b>
         100 W College Ave
     </a>
     </string>
 
+    <string name="bar2">
+    <a href="https://goo.gl/maps/cCwYYFLm6So">
+        <b>The Shandygaff</b>
+        212 E College Ave
+    </a>
+    </string>
+
+    <string name="bar3">
+    <a href="https://goo.gl/maps/9JYP8VdSqoJ2">
+        <b>Phyrst</b>
+        111 E Beaver Ave
+    </a>
+    </string>
+
+    <string name="bar4">
+    <a href="https://goo.gl/maps/MKg1Qg1XLku">
+        <b>Champs Downtown</b>
+        139 S Allen St
+    </a>
+    </string>
+
+
+    <string name="bar5">
+    <a href="https://goo.gl/maps/z9ZB6rMtvjp">
+        <b>Cafe 210 West</b>
+        210 West College Ave
+    </a>
+    </string>
+
+    <string name="bar6">
+    <a href="https://goo.gl/maps/CymquCKZ8Vq">
+        <b>Liberty Craft House</b>
+        346 E College Ave
+    </a>
+    </string>
+
+    <string name="bar7">
+    <a href="https://goo.gl/maps/dSMZT1gFpVx">
+        <b>The Saloon</b>
+        101 Heister St
+    </a>
+    </string>
+
+    <string name="bar8">
+    <a href="https://goo.gl/maps/fSWoD53fqL22">
+        <b>Mad Mex</b>
+        240 S Pugh St
+    </a>
+    </string>
+
+    <string name="bar9">
+    <a href="https://goo.gl/maps/atYbHXMaMUC2">
+        <b>Local Whiskey</b>
+        107 E Beaver Ave
+    </a>
+    </string>
+
+    <string name="bar10">
+    <a href="https://goo.gl/maps/kbzCJZW4uiK2">
+        <b>Basement Nightspot</b>
+        112 W College Ave
+    </a>
+    </string>
+
+    <string name="bar11">
+    <a href="https://goo.gl/maps/bvo4B7t9fEt">
+        <b>Inferno</b>
+        340 E College Ave
+    </a>
+    </string>
+
 
     <string name="Bars">
-        Cafe 210 West \n
-        210 West College Ave \n\n
-
-        Champs Downtown \n
-        139 S Allen St \n\n
-
-        Indigo \n
-        112 W College Ave \n\n
-
-        Inferno \n
-        340 E College Ave \n\n
-
-        Liberty Craft House \n
-        346 E College Ave \n\n
-
-        Local Whiskey \n
-        107 E Beaver Ave \n\n
-
-        Mad Mex \n
-        240 S Pugh St \n\n
-
-        Phyrst \n
-        111 E Beaver Ave \n\n
-
-        The Saloon \n
-        101 Heister St \n\n
+        Zeno\'s Pub\n
+        100 W College Ave\n\n
 
         The Shandygaff \n
         212 E College Ave \n\n
 
-        Zeno\'s Pub\n
-        100 W College Ave\n\n
+        Phyrst \n
+        111 E Beaver Ave \n\n
+
+        Champs Downtown \n
+        139 S Allen St \n\n
+
+        Cafe 210 West \n
+        210 West College Ave \n\n
+
+        Liberty Craft House \n
+        346 E College Ave \n\n
+
+        The Saloon \n
+        101 Heister St \n\n
+
+        Mad Mex \n
+        240 S Pugh St \n\n
+
+        Local Whiskey \n
+        107 E Beaver Ave \n\n
+
+        Basement Nightspot \n
+        112 W College Ave \n\n
+
+        Inferno \n
+        340 E College Ave \n\n
 
     </string>
 
@@ -785,5 +786,10 @@
     <string name="donation">
         You can donate to Shot@Life campaign with cash or Venmo @William-Juppenlatz with the message "Shot@Life Donation". We thank you for your support!
     </string>
+
+    <string name="google_maps_key">
+        AIzaSyDqvjPj18uoo4DgyFEey0dCMhV2UQhmkAI
+    </string>
+
 
 </resources>
