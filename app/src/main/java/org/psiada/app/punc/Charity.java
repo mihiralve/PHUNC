@@ -4,9 +4,15 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 /**
@@ -64,7 +70,16 @@ public class Charity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_charity, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_charity, container, false);
+
+        ImageView charityImage = (ImageView)rootView.findViewById(R.id.charityImage);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/Support-Refugee-Education.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(charityImage);
+
+        TextView donation = (TextView)rootView.findViewById(R.id.donation);
+        donation.setClickable(true);
+        donation.setMovementMethod(LinkMovementMethod.getInstance());
+
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

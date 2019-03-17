@@ -4,10 +4,12 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -71,16 +73,23 @@ public class Merchandise extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_merchandise, container, false);
 
         ImageView merch1 = (ImageView)rootView.findViewById(R.id.merch1);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Pocket-Tee-1.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch1);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/Doubleshot-erased.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch1);
 
         ImageView merch2 = (ImageView)rootView.findViewById(R.id.merch2);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch2);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch2);
 
         ImageView merch3 = (ImageView)rootView.findViewById(R.id.merch3);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch3);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch3);
 
-        //ImageView merch4 = (ImageView)rootView.findViewById(R.id.merch4);
-        //Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo-.png").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch4);
+        ImageView merch4 = (ImageView)rootView.findViewById(R.id.merch4);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/phone-wallet.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch4);
+
+        ImageView merch5 = (ImageView)rootView.findViewById(R.id.merch5);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2019/03/package.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).override(400, 500).into(merch5);
+
+        TextView merchpurchase = (TextView)rootView.findViewById(R.id.merchpurchase);
+        merchpurchase.setClickable(true);
+        merchpurchase.setMovementMethod(LinkMovementMethod.getInstance());
 
         return rootView;
     }

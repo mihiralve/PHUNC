@@ -12,6 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/frag_merch">
+
             <TextView
                 android:id="@+id/merch_header"
                 android:layout_width="match_parent"
@@ -46,8 +47,9 @@
                     android:layout_centerHorizontal="true"
                     android:id="@+id/merch1_info"
                     android:layout_toRightOf="@id/merch1"
+                    android:layout_marginTop="42dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Pocket Tee"
+                    android:text="Double Shot Glass"
                     android:textSize="18sp"/>
 
                 <TextView
@@ -58,7 +60,7 @@
                     android:layout_toRightOf="@id/merch1"
                     android:layout_below="@id/merch1_info"
                     android:layout_marginLeft="10dp"
-                    android:text="$15"
+                    android:text="$3"
                     android:textSize="18sp"/>
 
             </RelativeLayout>
@@ -86,8 +88,9 @@
                     android:layout_centerHorizontal="true"
                     android:id="@+id/merch2_info"
                     android:layout_toRightOf="@id/merch2"
+                    android:layout_marginTop="30dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Tee"
+                    android:text="Shot Glass"
                     android:textSize="18sp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,7 +100,7 @@
                     android:layout_toRightOf="@id/merch2"
                     android:layout_below="@id/merch2_info"
                     android:layout_marginLeft="10dp"
-                    android:text="$15"
+                    android:text="$2"
                     android:textSize="18sp"/>
 
 
@@ -118,7 +121,7 @@
                     android:layout_height="250dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true" />
+                    android:layout_alignParentTop="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -126,25 +129,121 @@
                     android:layout_centerHorizontal="true"
                     android:id="@+id/merch3_info"
                     android:layout_toRightOf="@id/merch3"
+                    android:layout_marginTop="15dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Back (Tee)"
+                    android:text="Bottle Opener"
                     android:textSize="18sp"/>
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:id="@+id/merch3_price"-->
-                    <!--android:layout_toRightOf="@id/merch3"-->
-                    <!--android:layout_below="@id/merch3_info"-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:autoLink="email"-->
-                    <!--android:textSize="18sp"/>-->
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch3_price"
+                    android:layout_toRightOf="@id/merch3"
+                    android:layout_below="@id/merch3_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="$2"
+                    android:textSize="18sp"/>
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/merchandise3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/merchandise4">
 
+                <ImageView
+                    android:id="@+id/merch4"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch4_info"
+                    android:layout_toRightOf="@id/merch4"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Phone Wallet"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch4_price"
+                    android:layout_toRightOf="@id/merch4"
+                    android:layout_below="@id/merch4_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="$2"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/merchandise4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/merchandise5">
+
+                <ImageView
+                    android:id="@+id/merch5"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch5_info"
+                    android:layout_toRightOf="@id/merch5"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Package"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/merch5_price"
+                    android:layout_toRightOf="@id/merch5"
+                    android:layout_below="@id/merch5_info"
+                    android:layout_marginLeft="10dp"
+                    android:text="$5"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/merchpurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/merchandise5"
+                android:layout_centerHorizontal="true"
+                android:text="@string/merchpurchase"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColorLink="#2f4f4f"
+                android:textAlignment="center"/>
 
         </RelativeLayout>
     </ScrollView>

@@ -773,18 +773,32 @@
     </string>
 
     <string name="charityDesc">
-        She\’s the First (STF) is a not-for-profit organization that sponsors programs to support girls education across the world. According to their website, She\'s the First strives to fight gender inequality by supporting girls who will be the first in their families to graduate high school and by training students everywhere to be global citizens.
-        \n\nThe organization takes a three-pronged approach to shape young women into changemakers: education, mentorship, and global leadership training. By providing first-generation high school students with funding and leadership training organized through local-level NGOs, connecting students and Campus Chapter Members to trained mentors, and implementing global leadership curriculum for students and Campus Chapters, She’s the First is working to make educated girls the norm, not the exception. In 2017 alone, She’s the First raised over $1.5 million for girls around the world.
-        \n\nWhat can I do to help?
-        \n\nThroughout the weekend, we will be hosting Penny Wars! The top three winning committees will have the opportunity to pie both their Head of Committee and Chair during the Delegate Social on Saturday Night. Additionally, staffers will compete to pie one of the Secretariat members. Don’t forget to bring your coins and dollar bills to participate!
-        \n\nQuestions? Ask your Chair or Head of Committee for more information!
-        \n\nHow can I support STF after PHUNC VI is over?
-        \nVisit https://shesthefirst.org for more information on how to support She’s the First’s mission to promote girls education across the globe!
+        Adopt-A-Future
+
+        UNA-USA, the UN Refugee Agency (UNHCR), and USA for UNHCR are working to prevent a lost generation by giving refugee children the education they need to build a better future.
+
+        68.5 million people around the world have been forced to flee their homes in search of refuge from conflict and persecution. 25.4 million of these displaced are refugees, more than half of whom are children. The UN Refugee Agency (UNHCR) is working to prevent a lost generation by educating refugee children in camps and other settings around the world, but they need our help.
+
+        Questions? Ask your Chair or Head of Committee for more information!
+
+        Visit https://unausa.org/adopt-a-future/ to learn more about the cause!
 
     </string>
 
+
+
     <string name="donation">
-        You can donate to Shot@Life campaign with cash or Venmo @William-Juppenlatz with the message "Shot@Life Donation". We thank you for your support!
+        <a href="https://venmo.com/code?user_id=2300509163618304332">
+        <b>Click here to Venmo our Director of Finances @Trevor-Bergqvist to donate!</b>
+    </a>
+
+    </string>
+
+    <string name="merchpurchase">
+        <a href="https://venmo.com/code?user_id=2300509163618304332">
+        <b>Click here to buy something through Venmo through our Director of Finances @Trevor-Bergqvist! </b>
+    </a>
+
     </string>
 
     <string name="google_maps_key">
