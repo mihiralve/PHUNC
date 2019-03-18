@@ -85,7 +85,6 @@ public class weekend_schedule extends Fragment {
         adapter.addFragment(new Schedule(), "Schedule");
         adapter.addFragment(new Rooms(), "Rooms");
         adapter.addFragment(new Rooms(), "Social");
-        adapter.addFragment(new Rooms(), "Maps");
         viewpager.setAdapter(adapter);
 
     }

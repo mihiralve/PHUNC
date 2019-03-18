@@ -786,6 +786,7 @@
     </string>
 
 
+
     <string name="donation">
         <a href="https://venmo.com/code?user_id=2300509163618304332">
         <b>Click here to Venmo our Director of Finances @Trevor-Bergqvist to donate!</b>
@@ -803,10 +804,6 @@
     <string name="google_maps_key">
         AIzaSyDqvjPj18uoo4DgyFEey0dCMhV2UQhmkAI
     </string>
-
-
-    <string name="map_app_name">Map With Marker</string>
-    <string name="title_activity_maps">Map with Marker</string>
 
 
 </resources>
