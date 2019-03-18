@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "364012268181-gfranu3lemtdnds6a4ldd0v2r09akm93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.psiada.app.phunc",
+            "certificate_hash": "f19e19231fd7c5c5fa40be054a94b41410456295"
+          }
+        },
+        {
           "client_id": "364012268181-mhiai7gp2mogi7s71trda50f71t7j9im.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -44,10 +52,10 @@
               "client_type": 3
             },
             {
-              "client_id": "364012268181-evftgfe013fovsd018e2ehkuvra09gm5.apps.googleusercontent.com",
+              "client_id": "364012268181-lt10jul10o3a8blh90fk4lpc7s7snib7.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "org.PSIADA.PUNC"
+                "bundle_id": "org.PSIADA.PHUNC"
               }
             }
           ]

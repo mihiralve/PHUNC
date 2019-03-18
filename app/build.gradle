@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId "org.psiada.app.phunc"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 2
-        versionName "1.1"
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -20,7 +21,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.google.firebase:firebase-messaging:17.4.0'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -34,13 +35,5 @@ dependencies {
 
 }
 
-
-
-
-
-
-
-
-
-
 apply plugin: 'com.google.gms.google-services'
+
