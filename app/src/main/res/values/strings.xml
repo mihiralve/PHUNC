@@ -626,116 +626,117 @@
     </string>
 
     <string name="bar1">
-    <a href="https://goo.gl/maps/z9ZB6rMtvjp">
-        <b>Cafe 210 West</b>
-        210 West College Ave
-    </a>
-    </string>
-
-    <string name="bar2">
-    <a href="https://goo.gl/maps/MKg1Qg1XLku">
-        <b>Champs Downtown</b>
-        139 S Allen St
-    </a>
-    </string>
-
-    <string name="bar3">
-    <a href="https://goo.gl/maps/kbzCJZW4uiK2">
-        <b>Indigo</b>
-        112 W College Ave
-    </a>
-    </string>
-
-    <string name="bar4">
-    <a href="https://goo.gl/maps/bvo4B7t9fEt">
-        <b>Inferno</b>
-        340 E College Ave
-    </a>
-    </string>
-
-    <string name="bar5">
-    <a href="https://goo.gl/maps/CymquCKZ8Vq">
-        <b>Liberty Craft House</b>
-        346 E College Ave
-    </a>
-    </string>
-
-    <string name="bar6">
-    <a href="https://goo.gl/maps/atYbHXMaMUC2">
-        <b>Local Whiskey</b>
-        107 E Beaver Ave
-    </a>
-    </string>
-
-    <string name="bar7">
-    <a href="https://goo.gl/maps/fSWoD53fqL22">
-        <b>Mad Mex</b>
-        240 S Pugh St
-    </a>
-    </string>
-
-    <string name="bar8">
-    <a href="https://goo.gl/maps/9JYP8VdSqoJ2">
-        <b>Phyrst</b>
-        111 E Beaver Ave
-    </a>
-    </string>
-
-    <string name="bar9">
-    <a href="https://goo.gl/maps/dSMZT1gFpVx">
-        <b>The Saloon</b>
-        101 Heister St
-    </a>
-    </string>
-
-    <string name="bar10">
-    <a href="https://goo.gl/maps/cCwYYFLm6So">
-        <b>The Shandygaff</b>
-        212 E College Ave
-    </a>
-    </string>
-
-    <string name="bar11">
     <a href="https://goo.gl/maps/S1noXdzb1PD2">
         <b>Zeno\'s Pub</b>
         100 W College Ave
     </a>
     </string>
 
+    <string name="bar2">
+    <a href="https://goo.gl/maps/cCwYYFLm6So">
+        <b>The Shandygaff</b>
+        212 E College Ave
+    </a>
+    </string>
+
+    <string name="bar3">
+    <a href="https://goo.gl/maps/9JYP8VdSqoJ2">
+        <b>Phyrst</b>
+        111 E Beaver Ave
+    </a>
+    </string>
+
+    <string name="bar4">
+    <a href="https://goo.gl/maps/MKg1Qg1XLku">
+        <b>Champs Downtown</b>
+        139 S Allen St
+    </a>
+    </string>
+
+
+    <string name="bar5">
+    <a href="https://goo.gl/maps/z9ZB6rMtvjp">
+        <b>Cafe 210 West</b>
+        210 West College Ave
+    </a>
+    </string>
+
+    <string name="bar6">
+    <a href="https://goo.gl/maps/CymquCKZ8Vq">
+        <b>Liberty Craft House</b>
+        346 E College Ave
+    </a>
+    </string>
+
+    <string name="bar7">
+    <a href="https://goo.gl/maps/dSMZT1gFpVx">
+        <b>The Saloon</b>
+        101 Heister St
+    </a>
+    </string>
+
+    <string name="bar8">
+    <a href="https://goo.gl/maps/fSWoD53fqL22">
+        <b>Mad Mex</b>
+        240 S Pugh St
+    </a>
+    </string>
+
+    <string name="bar9">
+    <a href="https://goo.gl/maps/atYbHXMaMUC2">
+        <b>Local Whiskey</b>
+        107 E Beaver Ave
+    </a>
+    </string>
+
+    <string name="bar10">
+    <a href="https://goo.gl/maps/kbzCJZW4uiK2">
+        <b>Basement Nightspot</b>
+        112 W College Ave
+    </a>
+    </string>
+
+    <string name="bar11">
+    <a href="https://goo.gl/maps/bvo4B7t9fEt">
+        <b>Inferno</b>
+        340 E College Ave
+    </a>
+    </string>
+
 
     <string name="Bars">
-        Cafe 210 West \n
-        210 West College Ave \n\n
-
-        Champs Downtown \n
-        139 S Allen St \n\n
-
-        Indigo \n
-        112 W College Ave \n\n
-
-        Inferno \n
-        340 E College Ave \n\n
-
-        Liberty Craft House \n
-        346 E College Ave \n\n
-
-        Local Whiskey \n
-        107 E Beaver Ave \n\n
-
-        Mad Mex \n
-        240 S Pugh St \n\n
-
-        Phyrst \n
-        111 E Beaver Ave \n\n
-
-        The Saloon \n
-        101 Heister St \n\n
+        Zeno\'s Pub\n
+        100 W College Ave\n\n
 
         The Shandygaff \n
         212 E College Ave \n\n
 
-        Zeno\'s Pub\n
-        100 W College Ave\n\n
+        Phyrst \n
+        111 E Beaver Ave \n\n
+
+        Champs Downtown \n
+        139 S Allen St \n\n
+
+        Cafe 210 West \n
+        210 West College Ave \n\n
+
+        Liberty Craft House \n
+        346 E College Ave \n\n
+
+        The Saloon \n
+        101 Heister St \n\n
+
+        Mad Mex \n
+        240 S Pugh St \n\n
+
+        Local Whiskey \n
+        107 E Beaver Ave \n\n
+
+        Basement Nightspot \n
+        112 W College Ave \n\n
+
+        Inferno \n
+        340 E College Ave \n\n
 
     </string>
 
@@ -772,18 +773,37 @@
     </string>
 
     <string name="charityDesc">
-        She\’s the First (STF) is a not-for-profit organization that sponsors programs to support girls education across the world. According to their website, She\'s the First strives to fight gender inequality by supporting girls who will be the first in their families to graduate high school and by training students everywhere to be global citizens.
-        \n\nThe organization takes a three-pronged approach to shape young women into changemakers: education, mentorship, and global leadership training. By providing first-generation high school students with funding and leadership training organized through local-level NGOs, connecting students and Campus Chapter Members to trained mentors, and implementing global leadership curriculum for students and Campus Chapters, She’s the First is working to make educated girls the norm, not the exception. In 2017 alone, She’s the First raised over $1.5 million for girls around the world.
-        \n\nWhat can I do to help?
-        \n\nThroughout the weekend, we will be hosting Penny Wars! The top three winning committees will have the opportunity to pie both their Head of Committee and Chair during the Delegate Social on Saturday Night. Additionally, staffers will compete to pie one of the Secretariat members. Don’t forget to bring your coins and dollar bills to participate!
-        \n\nQuestions? Ask your Chair or Head of Committee for more information!
-        \n\nHow can I support STF after PHUNC VI is over?
-        \nVisit https://shesthefirst.org for more information on how to support She’s the First’s mission to promote girls education across the globe!
+        Adopt-A-Future
+
+        UNA-USA, the UN Refugee Agency (UNHCR), and USA for UNHCR are working to prevent a lost generation by giving refugee children the education they need to build a better future.
+
+        68.5 million people around the world have been forced to flee their homes in search of refuge from conflict and persecution. 25.4 million of these displaced are refugees, more than half of whom are children. The UN Refugee Agency (UNHCR) is working to prevent a lost generation by educating refugee children in camps and other settings around the world, but they need our help.
+
+        Questions? Ask your Chair or Head of Committee for more information!
+
+        Visit https://unausa.org/adopt-a-future/ to learn more about the cause!
 
     </string>
+
+
 
     <string name="donation">
-        You can donate to Shot@Life campaign with cash or Venmo @William-Juppenlatz with the message "Shot@Life Donation". We thank you for your support!
+        <a href="https://venmo.com/code?user_id=2300509163618304332">
+        <b>Click here to Venmo our Director of Finances @Trevor-Bergqvist to donate!</b>
+    </a>
+
     </string>
+
+    <string name="merchpurchase">
+        <a href="https://venmo.com/code?user_id=2300509163618304332">
+        <b>Click here to buy something through Venmo through our Director of Finances @Trevor-Bergqvist! </b>
+    </a>
+
+    </string>
+
+    <string name="google_maps_key">
+        AIzaSyDqvjPj18uoo4DgyFEey0dCMhV2UQhmkAI
+    </string>
+
 
 </resources>

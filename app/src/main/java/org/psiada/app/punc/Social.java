@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import org.psiada.app.punc.R;
 
@@ -65,7 +67,26 @@ public class Social extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_social, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_social, container, false);
+
+        WebView social = (WebView) rootView.findViewById(R.id.social);
+        social.getSettings().setJavaScriptEnabled(true);
+        social.loadUrl("https://punc.psiada.org/app-social/");
+        social.setWebViewClient(new WebViewClient(){
+
+            public void onPageFinished(WebView view, String url){
+                rootView.findViewById(R.id.social_loading).setVisibility(View.GONE);
+                rootView.findViewById(R.id.social).setVisibility(View.VISIBLE);
+
+            }
+        });
+
+
+
+
+
+        // Inflate the layout for this fragment
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

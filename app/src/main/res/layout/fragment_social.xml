@@ -6,9 +6,20 @@
     tools:context="org.psiada.app.punc.weekend_schedule">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <WebView
+        android:id="@+id/social"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/social_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:text="Loading..."
+        android:textSize="20dp"
+        android:visibility="visible"/>
 
 </FrameLayout>
