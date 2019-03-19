@@ -37,7 +37,7 @@ import static android.content.Context.LOCATION_SERVICE;
  * Use the {@link Transportation#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Transportation extends Fragment implements OnMapReadyCallback, GoogleMap.OnMyLocationClickListener {
+public class Transportation extends Fragment implements OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -131,6 +131,7 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
         googleMap = map;
 
         getLocationPermission();
+        googleMap.setOnMyLocationButtonClickListener(this);
         googleMap.setOnMyLocationClickListener(this);
 
         LatLng businessBuilding = new LatLng(40.803895, -77.865213);
@@ -175,9 +176,49 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
             LatLng myLocation = new LatLng(latitude, longitude);
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
         } else {
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(envy, 13));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(allenSt, 13));
 
         }
+    }
+
+    public void updateLocation(){
+        LocationManager locationManager = (LocationManager) this.getContext().getSystemService(LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        String provider = locationManager.getBestProvider(criteria, true);
+
+        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        Location location = locationManager.getLastKnownLocation(provider);
+
+        if (location != null){
+            double latitude = location.getLatitude();
+            double longitude = location.getLongitude();
+            LatLng myLocation = new LatLng(latitude, longitude);
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
+        } else {
+
+            LatLng allenSt = new LatLng(40.794324, -77.861592);
+            googleMap.addMarker(new MarkerOptions().position(allenSt)
+                    .title("Allen St. Grill"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(allenSt, 13));
+
+        }
+    }
+
+    @Override
+    public boolean onMyLocationButtonClick() {
+        Toast.makeText(getActivity(), "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+        // Return false so that we don't consume the event and the default behavior still occurs
+        // (the camera animates to the user's current position).
+        return false;
     }
 
     @Override
@@ -201,6 +242,8 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
                     new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
         }
+
+        updateLocation();
     }
 
     @Override
