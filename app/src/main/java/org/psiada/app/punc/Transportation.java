@@ -166,6 +166,8 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
+
+
             return;
         }
         Location location = locationManager.getLastKnownLocation(provider);
@@ -194,6 +196,9 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
+            ActivityCompat.requestPermissions(this.getActivity(),
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
+                    PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
             return;
         }
         Location location = locationManager.getLastKnownLocation(provider);
@@ -237,11 +242,15 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
                 == PackageManager.PERMISSION_GRANTED) {
             mLocationPermissionGranted = true;
             googleMap.setMyLocationEnabled(true);
+
         } else {
             ActivityCompat.requestPermissions(this.getActivity(),
                     new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
+            getFragmentManager().beginTransaction().detach(this).attach(this).commit();
+
         }
+
 
         updateLocation();
     }
