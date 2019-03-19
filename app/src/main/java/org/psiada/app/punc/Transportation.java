@@ -197,7 +197,7 @@ public class Transportation extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap map) {
         googleMap = map;
-        LatLng businessBuilding = new LatLng(40.803895, -77.856230);
+        LatLng businessBuilding = new LatLng(40.803895, -77.865213);
         googleMap.addMarker(new MarkerOptions().position(businessBuilding)
                 .title("Business Building"));
 
