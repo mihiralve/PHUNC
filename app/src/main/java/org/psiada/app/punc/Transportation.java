@@ -8,9 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -194,6 +197,27 @@ public class Transportation extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap map) {
         googleMap = map;
+        LatLng businessBuilding = new LatLng(40.803895, -77.856230);
+        googleMap.addMarker(new MarkerOptions().position(businessBuilding)
+                .title("Business Building"));
+
+        LatLng envy = new LatLng(40.798221, -77.856230);
+        googleMap.addMarker(new MarkerOptions().position(envy)
+                .title("Envy"));
+
+        LatLng allenSt = new LatLng(40.794324, -77.861592);
+        googleMap.addMarker(new MarkerOptions().position(allenSt)
+                .title("Allen St. Grill"));
+
+        LatLng radisson = new LatLng(40.810985, -77.832877);
+        googleMap.addMarker(new MarkerOptions().position(radisson)
+                .title("Radisson"));
+
+        LatLng super8 = new LatLng(40.786302, -77.834840);
+        googleMap.addMarker(new MarkerOptions().position(super8)
+                .title("Super 8"));
+
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(envy, 13));
     }
 
     /**
