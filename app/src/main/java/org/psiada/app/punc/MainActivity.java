@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity
         Resources.OnFragmentInteractionListener, Guides.OnFragmentInteractionListener, Contact.OnFragmentInteractionListener, Feedback.OnFragmentInteractionListener,
         Restaurants.OnFragmentInteractionListener, Coffee.OnFragmentInteractionListener, Bars.OnFragmentInteractionListener, Schedule.OnFragmentInteractionListener,
         Rooms.OnFragmentInteractionListener, Resources_guide.OnFragmentInteractionListener, Transportation.OnFragmentInteractionListener, Charity.OnFragmentInteractionListener,
-        Merchandise.OnFragmentInteractionListener, Map.OnFragmentInteractionListener {
+        Merchandise.OnFragmentInteractionListener, Social.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
