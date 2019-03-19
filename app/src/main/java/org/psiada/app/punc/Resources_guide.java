@@ -70,7 +70,7 @@ public class Resources_guide extends Fragment {
 
         WebView crisis101 = (WebView) rootView.findViewById(R.id.conferenceguide);
         crisis101.getSettings().setJavaScriptEnabled(true);
-        crisis101.loadUrl("https://docs.google.com/viewer?embedded=true&url=https://punc.psiada.org/wp-content/uploads/2019/03/PUNC-XII-Conference-Guide-Final-1.pdf");
+        crisis101.loadUrl("https://punc.psiada.org/wp-content/plugins/pdfjs-viewer-shortcode/pdfjs/web/viewer.php?file=https://punc.psiada.org/wp-content/uploads/2019/03/PUNC-XII-Conference-Guide-Final-1.pdf&download=true&print=true&openfile=false");
         crisis101.setWebViewClient(new WebViewClient(){
 
             public void onPageFinished(WebView view, String url){
