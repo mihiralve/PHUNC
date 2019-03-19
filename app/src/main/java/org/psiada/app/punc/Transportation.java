@@ -34,7 +34,7 @@ import com.google.android.gms.maps.MapView;
  * Use the {@link Transportation#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Transportation extends Fragment {
+public class Transportation extends Fragment implements OnMapReadyCallback {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -47,6 +47,7 @@ public class Transportation extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     private MapView mapView;
+    private GoogleMap googleMap;
 
     public Transportation() {
         // Required empty public constructor
@@ -78,7 +79,8 @@ public class Transportation extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        mapView.onCreate(savedInstanceState);
+//        mapView = (MapView) findViewById(R.id.map);
+//        mapView.onCreate(savedInstanceState);
 
     }
 
@@ -88,7 +90,10 @@ public class Transportation extends Fragment {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_transportation, container, false);
 
-        MapView mapView = rootView.findViewById(R.id.map);
+        mapView = rootView.findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.onResume();
+        mapView.getMapAsync(this);
 
 //        TouchImageView campusMap = (TouchImageView) rootView.findViewById(R.id.campusMap);
 //        final ProgressBar progressBar = new ProgressBar(getContext());
@@ -153,51 +158,56 @@ public class Transportation extends Fragment {
         mListener = null;
     }
 
+//    @Override
+//    public void onStart() {
+//
+//        super.onStart();
+//        mapView.onStart();
+//    }
+//
+//    @Override
+//    public void onResume() {
+//
+//        super.onResume();
+//        mapView.onResume();
+//    }
+//
+//    @Override
+//    public void onPause() {
+//
+//        super.onPause();
+//        mapView.onPause();
+//    }
+//
+//    @Override
+//    public void onStop() {
+//
+//        super.onStop();
+//        mapView.onStop();
+//    }
+//
+//    @Override
+//    public void onDestroy() {
+//
+//        super.onDestroy();
+//        mapView.onDestroy();
+//    }
+//
+//    @Override
+//    public void onSaveInstanceState (Bundle outState){
+//        mapView.onSaveInstanceState(outState);
+//    }
+//
+//    @Override
+//    public void onLowMemory() {
+//
+//        super.onLowMemory();
+//        mapView.onLowMemory();
+//    }
+
     @Override
-    public void onStart() {
-
-        super.onStart();
-        mapView.onStart();
-    }
-
-    @Override
-    public void onResume() {
-
-        super.onResume();
-        mapView.onResume();
-    }
-
-    @Override
-    public void onPause() {
-
-        super.onPause();
-        mapView.onPause();
-    }
-
-    @Override
-    public void onStop() {
-
-        super.onStop();
-        mapView.onStop();
-    }
-
-    @Override
-    public void onDestroy() {
-
-        super.onDestroy();
-        mapView.onDestroy();
-    }
-
-    @Override
-    public void onSaveInstanceState (Bundle outState){
-        mapView.onSaveInstanceState(outState);
-    }
-
-    @Override
-    public void onLowMemory() {
-
-        super.onLowMemory();
-        mapView.onLowMemory();
+    public void onMapReady(GoogleMap map) {
+        googleMap = map;
     }
 
     /**

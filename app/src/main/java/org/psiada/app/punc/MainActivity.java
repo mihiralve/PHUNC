@@ -12,7 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
 //import static org.psiada.app.phunc.R.id.fab;
 
 public class MainActivity extends AppCompatActivity
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity
         Resources.OnFragmentInteractionListener, Guides.OnFragmentInteractionListener, Contact.OnFragmentInteractionListener, Feedback.OnFragmentInteractionListener,
         Restaurants.OnFragmentInteractionListener, Coffee.OnFragmentInteractionListener, Bars.OnFragmentInteractionListener, Schedule.OnFragmentInteractionListener,
         Rooms.OnFragmentInteractionListener, Resources_guide.OnFragmentInteractionListener, Transportation.OnFragmentInteractionListener, Charity.OnFragmentInteractionListener,
-        Merchandise.OnFragmentInteractionListener{
+        Merchandise.OnFragmentInteractionListener, Map.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,6 +153,7 @@ public class MainActivity extends AppCompatActivity
 
         try{
             fragment = (Fragment) fragmentClass.newInstance();
+
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -175,4 +175,5 @@ public class MainActivity extends AppCompatActivity
     public void onFragmentInteraction(Uri uri) {
 
     }
+
 }
