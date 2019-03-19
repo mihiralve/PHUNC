@@ -1,70 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="org.psiada.app.punc.Transportation">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
 
-             <RelativeLayout
-                 android:id="@+id/mapLayout"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content">
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mapLayout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
 
-                <org.psiada.app.punc.TouchImageView
-                    android:id="@+id/campusMap"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-
-             </RelativeLayout>
-            <TextView
-                android:id="@+id/willard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="8dp"
-                android:layout_below="@id/mapLayout"
-                android:text="@string/willard"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/atherton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="8dp"
-                android:layout_below="@id/willard"
-                android:text="@string/atherton"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/sparks"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="8dp"
-                android:layout_below="@id/atherton"
-                android:text="@string/sparks"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/bbh"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="8dp"
-                android:layout_below="@id/sparks"
-                android:text="@string/bbh"
-                android:textSize="20dp"/>
-
-        </RelativeLayout>
-    </ScrollView>
+    <!--<org.psiada.app.punc.TouchImageView-->
+    <!--android:id="@+id/campusMap"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
 
 
-</FrameLayout>
+    <!--</RelativeLayout>-->
+    <!--<TextView-->
+    <!--android:id="@+id/willard"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_below="@id/mapLayout"-->
+    <!--android:text="@string/willard"-->
+    <!--android:textSize="20dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/atherton"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_below="@id/willard"-->
+    <!--android:text="@string/atherton"-->
+    <!--android:textSize="20dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sparks"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_below="@id/atherton"-->
+    <!--android:text="@string/sparks"-->
+    <!--android:textSize="20dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/bbh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_below="@id/sparks"-->
+    <!--android:text="@string/bbh"-->
+    <!--android:textSize="20dp"/>-->
+
+    <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<MapView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+
+</com.google.android.gms.maps.MapView>

@@ -19,6 +19,12 @@ import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.MapView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,6 +45,8 @@ public class Transportation extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    private MapView mapView;
 
     public Transportation() {
         // Required empty public constructor
@@ -69,6 +77,9 @@ public class Transportation extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        mapView.onCreate(savedInstanceState);
+
     }
 
     @Override
@@ -77,37 +88,41 @@ public class Transportation extends Fragment {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_transportation, container, false);
 
-        TouchImageView campusMap = (TouchImageView) rootView.findViewById(R.id.campusMap);
-        final ProgressBar progressBar = new ProgressBar(getContext());
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/campus-map.jpg").listener(new RequestListener<String, GlideDrawable>() {
-            @Override
-            public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-                progressBar.setVisibility(View.GONE);
-                return false;
-            }
+        MapView mapView = rootView.findViewById(R.id.map);
 
-            @Override
-            public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
-                progressBar.setVisibility(View.GONE);
-                return false;
-            }
-        }).diskCacheStrategy(DiskCacheStrategy.ALL).into(campusMap);
+//        TouchImageView campusMap = (TouchImageView) rootView.findViewById(R.id.campusMap);
+//        final ProgressBar progressBar = new ProgressBar(getContext());
+//        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/campus-map.jpg").listener(new RequestListener<String, GlideDrawable>() {
+//            @Override
+//            public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
+//                progressBar.setVisibility(View.GONE);
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
+//                progressBar.setVisibility(View.GONE);
+//                return false;
+//            }
+//        }).diskCacheStrategy(DiskCacheStrategy.ALL).into(campusMap);
+//
+//        TextView willard = (TextView)rootView.findViewById(R.id.willard);
+//        willard.setClickable(true);
+//        willard.setMovementMethod(LinkMovementMethod.getInstance());
+//
+//        TextView atherton = (TextView)rootView.findViewById(R.id.atherton);
+//        atherton.setClickable(true);
+//        atherton.setMovementMethod(LinkMovementMethod.getInstance());
+//
+//        TextView sparks = (TextView)rootView.findViewById(R.id.sparks);
+//        sparks.setClickable(true);
+//        sparks.setMovementMethod(LinkMovementMethod.getInstance());
+//
+//        TextView bbh = (TextView)rootView.findViewById(R.id.bbh);
+//        bbh.setClickable(true);
+//        bbh.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView willard = (TextView)rootView.findViewById(R.id.willard);
-        willard.setClickable(true);
-        willard.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView atherton = (TextView)rootView.findViewById(R.id.atherton);
-        atherton.setClickable(true);
-        atherton.setMovementMethod(LinkMovementMethod.getInstance());
-
-        TextView sparks = (TextView)rootView.findViewById(R.id.sparks);
-        sparks.setClickable(true);
-        sparks.setMovementMethod(LinkMovementMethod.getInstance());
-
-        TextView bbh = (TextView)rootView.findViewById(R.id.bbh);
-        bbh.setClickable(true);
-        bbh.setMovementMethod(LinkMovementMethod.getInstance());
 
 
 
@@ -136,6 +151,53 @@ public class Transportation extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onStart() {
+
+        super.onStart();
+        mapView.onStart();
+    }
+
+    @Override
+    public void onResume() {
+
+        super.onResume();
+        mapView.onResume();
+    }
+
+    @Override
+    public void onPause() {
+
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    public void onStop() {
+
+        super.onStop();
+        mapView.onStop();
+    }
+
+    @Override
+    public void onDestroy() {
+
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    public void onSaveInstanceState (Bundle outState){
+        mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onLowMemory() {
+
+        super.onLowMemory();
+        mapView.onLowMemory();
     }
 
     /**
