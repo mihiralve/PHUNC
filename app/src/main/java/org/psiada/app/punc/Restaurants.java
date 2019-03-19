@@ -81,7 +81,7 @@ public class Restaurants extends Fragment {
         ActualMenu1.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage1 = (ImageView)rootView.findViewById(R.id.menuImage1);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/india_pavillion.jpeg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage1);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/india_pavillion.jpeg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage1);
 
 
         TextView menu2 = (TextView)rootView.findViewById(R.id.menu2);
@@ -93,7 +93,7 @@ public class Restaurants extends Fragment {
         ActualMenu2.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage2 = (ImageView)rootView.findViewById(R.id.menuImage2);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/pita_cabana.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage2);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/pita_cabana.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage2);
 
 
         TextView menu3 = (TextView)rootView.findViewById(R.id.menu3);
@@ -105,7 +105,7 @@ public class Restaurants extends Fragment {
         ActualMenu3.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage3 = (ImageView)rootView.findViewById(R.id.menuImage3);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/yallah.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage3);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/yallah.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage3);
 
 
         TextView menu4 = (TextView)rootView.findViewById(R.id.menu4);
@@ -117,7 +117,7 @@ public class Restaurants extends Fragment {
         ActualMenu4.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage4 = (ImageView)rootView.findViewById(R.id.menuImage4);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/cozy_thai.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage4);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/cozy_thai.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage4);
 
         TextView menu20 = (TextView)rootView.findViewById(R.id.menu20);
         menu20.setClickable(true);
@@ -128,7 +128,7 @@ public class Restaurants extends Fragment {
         ActualMenu20.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage20 = (ImageView)rootView.findViewById(R.id.menuImage20);
-        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/snap.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage20);
+        Glide.with(getContext()).load("httpss://phunc.psiada.org/wp-content/uploads/2018/10/snap.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage20);
 
         TextView menu5 = (TextView)rootView.findViewById(R.id.menu5);
         menu5.setClickable(true);
@@ -140,7 +140,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage5 = (ImageView)rootView.findViewById(R.id.menuImage5);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/irvings.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage5);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/irvings.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage5);
 
 
         TextView menu6 = (TextView)rootView.findViewById(R.id.menu6);
@@ -153,7 +153,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage6 = (ImageView)rootView.findViewById(R.id.menuImage6);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/fiddlehead.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage6);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/fiddlehead.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage6);
 
 
         TextView menu7 = (TextView)rootView.findViewById(R.id.menu7);
@@ -166,7 +166,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage7 = (ImageView)rootView.findViewById(R.id.menuImage7);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/bagel_crust.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage7);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/bagel_crust.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage7);
 
 
         TextView menu8 = (TextView)rootView.findViewById(R.id.menu8);
@@ -179,7 +179,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage8 = (ImageView)rootView.findViewById(R.id.menuImage8);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/little_szechuan.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage8);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/little_szechuan.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage8);
 
 
         TextView menu9 = (TextView)rootView.findViewById(R.id.menu9);
@@ -192,7 +192,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage9 = (ImageView)rootView.findViewById(R.id.menuImage9);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/corner_room.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage9);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/corner_room.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage9);
 
 
         TextView menu10 = (TextView)rootView.findViewById(R.id.menu10);
@@ -205,7 +205,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage10 = (ImageView)rootView.findViewById(R.id.menuImage10);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/chipotle.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage10);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/chipotle.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage10);
 
 
         TextView menu11 = (TextView)rootView.findViewById(R.id.menu11);
@@ -218,7 +218,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage11 = (ImageView)rootView.findViewById(R.id.menuImage11);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/pho11.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage11);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/pho11.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage11);
 
 
 
@@ -232,7 +232,7 @@ public class Restaurants extends Fragment {
 
 
         ImageView menuImage12 = (ImageView)rootView.findViewById(R.id.menuImage12);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/deli.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage12);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/deli.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage12);
 
 
 
@@ -245,7 +245,7 @@ public class Restaurants extends Fragment {
         ActualMenu13.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage13 = (ImageView)rootView.findViewById(R.id.menuImage13);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/big_bowl.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage13);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/big_bowl.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage13);
 
 
 
@@ -258,7 +258,7 @@ public class Restaurants extends Fragment {
         ActualMenu14.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage14 = (ImageView)rootView.findViewById(R.id.menuImage14);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/babys.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage14);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/babys.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage14);
 
 
 
@@ -272,7 +272,7 @@ public class Restaurants extends Fragment {
         ActualMenu15.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage15 = (ImageView)rootView.findViewById(R.id.menuImage15);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/green_bowl.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage15);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/green_bowl.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage15);
 
 
 
@@ -286,7 +286,7 @@ public class Restaurants extends Fragment {
         ActualMenu16.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage16 = (ImageView)rootView.findViewById(R.id.menuImage16);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/underground.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage16);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/underground.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage16);
 
 
 
@@ -300,7 +300,7 @@ public class Restaurants extends Fragment {
         ActualMenu17.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage17 = (ImageView)rootView.findViewById(R.id.menuImage17);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/galanga.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage17);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/galanga.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage17);
 
 
 
@@ -314,7 +314,7 @@ public class Restaurants extends Fragment {
         ActualMenu18.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView menuImage18 = (ImageView)rootView.findViewById(R.id.menuImage18);
-        Glide.with(getContext()).load("http://phunc.psiada.org/wp-content/uploads/2017/11/tavern.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage18);
+        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2017/11/tavern.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(menuImage18);
 
 
 

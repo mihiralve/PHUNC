@@ -107,7 +107,7 @@ public class Announcements extends Fragment {
 
 
 
-        announcements.loadUrl("http://punc.psiada.org/app-announcements/");
+        announcements.loadUrl("https://punc.psiada.org/app-announcements/");
         ImageView conferenceLogo = (ImageView)rootView.findViewById(R.id.conf_logo);
         Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2016/08/PUNC-Logo-Blue.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(conferenceLogo);
 

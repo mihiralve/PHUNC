@@ -74,6 +74,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "364012268181-6fq6s2c99s62f51ajhneairb6aemfmso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.psiada.app.punc",
+            "certificate_hash": "f19e19231fd7c5c5fa40be054a94b41410456295"
+          }
+        },
+        {
           "client_id": "364012268181-mhiai7gp2mogi7s71trda50f71t7j9im.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -88,8 +96,20 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364012268181-mhiai7gp2mogi7s71trda50f71t7j9im.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "364012268181-lt10jul10o3a8blh90fk4lpc7s7snib7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.PSIADA.PHUNC"
+              }
+            }
+          ]
         },
         "ads_service": {
           "status": 2

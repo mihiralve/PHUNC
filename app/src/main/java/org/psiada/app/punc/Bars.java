@@ -77,77 +77,77 @@ public class Bars extends Fragment {
         bar1.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage1 = (ImageView)rootView.findViewById(R.id.barImage1);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/zenos.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage1);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/zenos.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage1);
 
         TextView bar2 = (TextView)rootView.findViewById(R.id.bar2);
         bar2.setClickable(true);
         bar2.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage2 = (ImageView)rootView.findViewById(R.id.barImage2);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/gaff.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage2);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/gaff.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage2);
 
         TextView bar3 = (TextView)rootView.findViewById(R.id.bar3);
         bar3.setClickable(true);
         bar3.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage3 = (ImageView)rootView.findViewById(R.id.barImage3);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/phyrst.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage3);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/phyrst.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage3);
 
         TextView bar4 = (TextView)rootView.findViewById(R.id.bar4);
         bar4.setClickable(true);
         bar4.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage4 = (ImageView)rootView.findViewById(R.id.barImage4);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/champs.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage4);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/champs.png").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage4);
 
         TextView bar5 = (TextView)rootView.findViewById(R.id.bar5);
         bar5.setClickable(true);
         bar5.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage5 = (ImageView)rootView.findViewById(R.id.barImage5);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/cafe.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage5);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/cafe.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage5);
 
         TextView bar6 = (TextView)rootView.findViewById(R.id.bar6);
         bar6.setClickable(true);
         bar6.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage6 = (ImageView)rootView.findViewById(R.id.barImage6);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/liberty.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage6);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/liberty.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage6);
 
         TextView bar7 = (TextView)rootView.findViewById(R.id.bar7);
         bar7.setClickable(true);
         bar7.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage7 = (ImageView)rootView.findViewById(R.id.barImage7);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/saloon.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage7);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/saloon.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage7);
 
         TextView bar8 = (TextView)rootView.findViewById(R.id.bar8);
         bar8.setClickable(true);
         bar8.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage8 = (ImageView)rootView.findViewById(R.id.barImage8);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/madmex.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage8);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/madmex.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage8);
 
         TextView bar9 = (TextView)rootView.findViewById(R.id.bar9);
         bar9.setClickable(true);
         bar9.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage9 = (ImageView)rootView.findViewById(R.id.barImage9);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/localwhiskey.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage9);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/localwhiskey.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage9);
 
         TextView bar10 = (TextView)rootView.findViewById(R.id.bar10);
         bar10.setClickable(true);
         bar10.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage10 = (ImageView)rootView.findViewById(R.id.barImage10);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/indigo.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage10);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/indigo.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage10);
 
         TextView bar11 = (TextView)rootView.findViewById(R.id.bar11);
         bar11.setClickable(true);
         bar11.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView barImage11 = (ImageView)rootView.findViewById(R.id.barImage11);
-        Glide.with(getContext()).load("http://punc.psiada.org/wp-content/uploads/2018/03/inferno.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage11);
+        Glide.with(getContext()).load("https://punc.psiada.org/wp-content/uploads/2018/03/inferno.jpg").diskCacheStrategy(DiskCacheStrategy.ALL).into(barImage11);
 
 
 
