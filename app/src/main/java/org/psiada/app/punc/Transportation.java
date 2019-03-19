@@ -1,19 +1,33 @@
 package org.psiada.app.punc;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.places.GeoDataClient;
+import com.google.android.gms.location.places.PlaceDetectionClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import static android.content.Context.LOCATION_SERVICE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,11 +37,12 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * Use the {@link Transportation#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Transportation extends Fragment implements OnMapReadyCallback {
+public class Transportation extends Fragment implements OnMapReadyCallback, GoogleMap.OnMyLocationClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -37,6 +52,9 @@ public class Transportation extends Fragment implements OnMapReadyCallback {
 
     private MapView mapView;
     private GoogleMap googleMap;
+
+    private boolean mLocationPermissionGranted = false;
+
 
     public Transportation() {
         // Required empty public constructor
@@ -68,57 +86,18 @@ public class Transportation extends Fragment implements OnMapReadyCallback {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-//        mapView = (MapView) findViewById(R.id.map);
-//        mapView.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_transportation, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_transportation, container, false);
 
         mapView = rootView.findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         mapView.onResume();
         mapView.getMapAsync(this);
-
-//        TouchImageView campusMap = (TouchImageView) rootView.findViewById(R.id.campusMap);
-//        final ProgressBar progressBar = new ProgressBar(getContext());
-//        Glide.with(getContext()).load("https://phunc.psiada.org/wp-content/uploads/2018/10/campus-map.jpg").listener(new RequestListener<String, GlideDrawable>() {
-//            @Override
-//            public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-//                progressBar.setVisibility(View.GONE);
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
-//                progressBar.setVisibility(View.GONE);
-//                return false;
-//            }
-//        }).diskCacheStrategy(DiskCacheStrategy.ALL).into(campusMap);
-//
-//        TextView willard = (TextView)rootView.findViewById(R.id.willard);
-//        willard.setClickable(true);
-//        willard.setMovementMethod(LinkMovementMethod.getInstance());
-//
-//        TextView atherton = (TextView)rootView.findViewById(R.id.atherton);
-//        atherton.setClickable(true);
-//        atherton.setMovementMethod(LinkMovementMethod.getInstance());
-//
-//        TextView sparks = (TextView)rootView.findViewById(R.id.sparks);
-//        sparks.setClickable(true);
-//        sparks.setMovementMethod(LinkMovementMethod.getInstance());
-//
-//        TextView bbh = (TextView)rootView.findViewById(R.id.bbh);
-//        bbh.setClickable(true);
-//        bbh.setMovementMethod(LinkMovementMethod.getInstance());
-
-
-
-
 
         return rootView;
     }
@@ -147,56 +126,13 @@ public class Transportation extends Fragment implements OnMapReadyCallback {
         mListener = null;
     }
 
-//    @Override
-//    public void onStart() {
-//
-//        super.onStart();
-//        mapView.onStart();
-//    }
-//
-//    @Override
-//    public void onResume() {
-//
-//        super.onResume();
-//        mapView.onResume();
-//    }
-//
-//    @Override
-//    public void onPause() {
-//
-//        super.onPause();
-//        mapView.onPause();
-//    }
-//
-//    @Override
-//    public void onStop() {
-//
-//        super.onStop();
-//        mapView.onStop();
-//    }
-//
-//    @Override
-//    public void onDestroy() {
-//
-//        super.onDestroy();
-//        mapView.onDestroy();
-//    }
-//
-//    @Override
-//    public void onSaveInstanceState (Bundle outState){
-//        mapView.onSaveInstanceState(outState);
-//    }
-//
-//    @Override
-//    public void onLowMemory() {
-//
-//        super.onLowMemory();
-//        mapView.onLowMemory();
-//    }
-
     @Override
     public void onMapReady(GoogleMap map) {
         googleMap = map;
+
+        getLocationPermission();
+        googleMap.setOnMyLocationClickListener(this);
+
         LatLng businessBuilding = new LatLng(40.803895, -77.865213);
         googleMap.addMarker(new MarkerOptions().position(businessBuilding)
                 .title("Business Building"));
@@ -217,8 +153,74 @@ public class Transportation extends Fragment implements OnMapReadyCallback {
         googleMap.addMarker(new MarkerOptions().position(super8)
                 .title("Super 8"));
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(envy, 13));
+        LocationManager locationManager = (LocationManager) this.getContext().getSystemService(LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        String provider = locationManager.getBestProvider(criteria, true);
+
+        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        Location location = locationManager.getLastKnownLocation(provider);
+
+        if (location != null){
+            double latitude = location.getLatitude();
+            double longitude = location.getLongitude();
+            LatLng myLocation = new LatLng(latitude, longitude);
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
+        } else {
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(envy, 13));
+
+        }
     }
+
+    @Override
+    public void onMyLocationClick(@NonNull Location location) {
+        Toast.makeText(getActivity(), "Current location:\n" + location, Toast.LENGTH_LONG).show();
+    }
+
+    private void getLocationPermission() {
+        /*
+         * Request location permission, so that we can get the location of the
+         * device. The result of the permission request is handled by a callback,
+         * onRequestPermissionsResult.
+         */
+        if (ContextCompat.checkSelfPermission(this.getActivity(),
+                android.Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED) {
+            mLocationPermissionGranted = true;
+            googleMap.setMyLocationEnabled(true);
+        } else {
+            ActivityCompat.requestPermissions(this.getActivity(),
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
+                    PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String permissions[],
+                                           @NonNull int[] grantResults) {
+        mLocationPermissionGranted = false;
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    mLocationPermissionGranted = true;
+                }
+            }
+        }
+    }
+
+
+
 
     /**
      * This interface must be implemented by activities that contain this
