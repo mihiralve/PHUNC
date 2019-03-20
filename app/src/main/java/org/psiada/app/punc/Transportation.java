@@ -251,6 +251,8 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
             ActivityCompat.requestPermissions(this.getActivity(),
                     new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
+
+            updateLocation();
         }
 
     }
