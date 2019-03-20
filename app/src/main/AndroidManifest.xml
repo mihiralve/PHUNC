@@ -13,10 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service
-            android:name="org.psiada.app.punc.FirebaseService"
-            android:enabled="true"
-            android:exported="true"></service>
+        <!--<service-->
+            <!--android:name="org.psiada.app.punc.FirebaseService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <activity
             android:name="org.psiada.app.punc.MainActivity"
