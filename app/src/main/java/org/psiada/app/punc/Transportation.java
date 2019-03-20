@@ -12,6 +12,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,12 +49,16 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
     private String mParam1;
     private String mParam2;
 
+    private final static String TAG = "Map";
+
     private OnFragmentInteractionListener mListener;
 
     private MapView mapView;
     private GoogleMap googleMap;
 
+    private boolean fragReload = false;
     private boolean mLocationPermissionGranted = false;
+
 
 
     public Transportation() {
@@ -127,10 +132,71 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+        if(googleMap != null){
+            googleMap.clear();
+
+            // add the markers just like how you did the first time
+            updateLocation();
+        }
+    }
+
+    @Override
     public void onMapReady(GoogleMap map) {
         googleMap = map;
 
         getLocationPermission();
+
+        updateLocation();
+
+    }
+
+    public void updateLocation(){
+
+        LocationManager locationManager = (LocationManager) this.getContext().getSystemService(LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        String provider = locationManager.getBestProvider(criteria, true);
+
+        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+
+            updateMarkers();
+
+            return;
+        }
+
+        Log.v(TAG, String.valueOf(ContextCompat.checkSelfPermission(this.getActivity(),android.Manifest.permission.ACCESS_FINE_LOCATION)));
+//        getFragmentManager().beginTransaction().detach(this).attach(this).commit();
+        Location location = locationManager.getLastKnownLocation(provider);
+
+        LatLng allenSt = new LatLng(40.794324, -77.861592);
+        googleMap.addMarker(new MarkerOptions().position(allenSt)
+                .title("Allen St. Grill"));
+
+        updateMarkers();
+
+        if (location != null){
+            double latitude = location.getLatitude();
+            double longitude = location.getLongitude();
+            LatLng myLocation = new LatLng(latitude, longitude);
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
+        } else {
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(allenSt, 13));
+
+        }
+
+    }
+
+    public void updateMarkers() {
+
         googleMap.setOnMyLocationButtonClickListener(this);
         googleMap.setOnMyLocationClickListener(this);
 
@@ -154,68 +220,6 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
         googleMap.addMarker(new MarkerOptions().position(super8)
                 .title("Super 8"));
 
-        LocationManager locationManager = (LocationManager) this.getContext().getSystemService(LOCATION_SERVICE);
-        Criteria criteria = new Criteria();
-        String provider = locationManager.getBestProvider(criteria, true);
-
-        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-
-
-            return;
-        }
-        Location location = locationManager.getLastKnownLocation(provider);
-
-        if (location != null){
-            double latitude = location.getLatitude();
-            double longitude = location.getLongitude();
-            LatLng myLocation = new LatLng(latitude, longitude);
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
-        } else {
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(allenSt, 13));
-
-        }
-    }
-
-    public void updateLocation(){
-        LocationManager locationManager = (LocationManager) this.getContext().getSystemService(LOCATION_SERVICE);
-        Criteria criteria = new Criteria();
-        String provider = locationManager.getBestProvider(criteria, true);
-
-        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            ActivityCompat.requestPermissions(this.getActivity(),
-                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
-                    PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
-            return;
-        }
-        Location location = locationManager.getLastKnownLocation(provider);
-
-        if (location != null){
-            double latitude = location.getLatitude();
-            double longitude = location.getLongitude();
-            LatLng myLocation = new LatLng(latitude, longitude);
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
-        } else {
-
-            LatLng allenSt = new LatLng(40.794324, -77.861592);
-            googleMap.addMarker(new MarkerOptions().position(allenSt)
-                    .title("Allen St. Grill"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(allenSt, 13));
-
-        }
     }
 
     @Override
@@ -247,12 +251,8 @@ public class Transportation extends Fragment implements OnMapReadyCallback, Goog
             ActivityCompat.requestPermissions(this.getActivity(),
                     new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
-            getFragmentManager().beginTransaction().detach(this).attach(this).commit();
-
         }
 
-
-        updateLocation();
     }
 
     @Override

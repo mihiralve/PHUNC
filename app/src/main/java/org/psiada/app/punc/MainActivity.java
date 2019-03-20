@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity
         Restaurants.OnFragmentInteractionListener, Coffee.OnFragmentInteractionListener, Bars.OnFragmentInteractionListener, Schedule.OnFragmentInteractionListener,
         Rooms.OnFragmentInteractionListener, Resources_guide.OnFragmentInteractionListener, Transportation.OnFragmentInteractionListener, Charity.OnFragmentInteractionListener,
         Merchandise.OnFragmentInteractionListener, Social.OnFragmentInteractionListener {
-    
+
+    private static final String TAG = "Punc_fire";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
